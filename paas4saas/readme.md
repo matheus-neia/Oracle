@@ -4,10 +4,10 @@ Muitas vezes precisamos colocar um processo de negócio, com regras específicas
 Após isso iremos criar um aplicativo Mobile, com a ajuda do **Oracle Mobile Cloud Service** e **Oracle MAX**, para rodar este novo processo de negócio criado. Além deste app iremos criar uma App Web utilizando o **Oracle  Visual Builder**.
 
 ## Divisão do Workshop
-- **Lab1: **Desenvolvimento da Integração entre Oracle OIC e Oracle Sales Cloud
-- **Lab2: **Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud
-- **Lab 3: **Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
-- **Lab 4: **Desenvolvimento de uma tela utilizando o Oracle Visual Builder
+- **Lab1:** Desenvolvimento da Integração entre Oracle OIC e Oracle Sales Cloud
+- **Lab2:** Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud
+- **Lab 3:** Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
+- **Lab 4:** Desenvolvimento de uma tela utilizando o Oracle Visual Builder
 
 ## Pré Requisitos
 Será necessário para realizar este Workshop:

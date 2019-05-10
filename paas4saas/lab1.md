@@ -35,12 +35,13 @@
 
 ### Passo 2
 **2.0** Repita os passos 1.3, 1.4 e 1.5. Porém agora o nome do conector será *Oracle Sales Cloud*. O nome da conexão insira `SalesCloudWorkshop_XX` (Onde XX será entregue pelo instrutor). Em **Role** selecione `Invoke` depois vá em **Create**.
+
 **2.1** Na página de configuração do conector no seção **Connection Properties** clique em **Configure Connectivity** Configure a conexão utilizando a URL do *OSC - Oracle Sales Cloud*. Para obter as configurações necessários veja o link (https://docs.oracle.com/en/cloud/paas/integration-cloud/sales-adapter/prerequisites-creating-connection.html#GUID-8AF6BDD4-A711-480E-B71F-FAD062024A57) 
 
 ![image007.png](images/1/image007.png "image007.png")
 
-**2.1.1** Preencha em **OSC Services Catalog WSDL URL** com a informação que você pegou no item 1.8 ou utilize esta: https://testingapplication.com/fscmService/ServiceCatalogService?WSDL e substitua testingapplication.com pelo domínio do seu ambiente do OSC. 
-**2.1.2** Preencham em **Interface Catalog URL (optional)** com a informação que você pegou no item 1.8 ou utilize esta: https://testingapplication.com/helpPortalApi/otherResources/latest/interfaceCatalogs e substitua testingapplication.com pelo domínio do seu ambiente do OSC.
+**2.1.1** Preencha em **OSC Services Catalog WSDL URL** com a informação que você pegou no item 1.8 ou utilize esta: `https://testingapplication.com/fscmService/ServiceCatalogService?WSDL` e substitua testingapplication.com pelo domínio do seu ambiente do OSC. 
+**2.1.2** Preencham em **Interface Catalog URL (optional)** com a informação que você pegou no item 1.8 ou utilize esta: `https://testingapplication.com/helpPortalApi/otherResources/latest/interfaceCatalogs` e substitua testingapplication.com pelo domínio do seu ambiente do OSC.
 
 ![image008.png](images/1/image008.png "image008.png")
 
