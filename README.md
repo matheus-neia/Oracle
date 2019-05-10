@@ -1,36 +1,48 @@
-![](common/images/customer.logo.png)
----
-# ORACLE Learning Library #
+# Visão Geral do *Workshop*
+## Processo de negócio
+Muitas vezes precisamos colocar um processo de negócio, com regras específicas em nosso CRM, para isso este workshop irá mostrar a criação de uma oportunidade no **Oracle Sales Cloud** utilizando o **Oracle Integration Cloud Service** para integrar este processo de negócio ao software Oracle Sales Cloud. 
+Após isso iremos criar um aplicativo Mobile, com a ajuda do **Oracle Mobile Cloud Service** e **Oracle MAX**, para rodar este novo processo de negócio criado. Além deste app iremos criar uma App Web utilizando o **Oracle  Visual Builder**.
 
-Note: Content in the README is under development
+## Divisão do Workshop
+- **Lab1: **Desenvolvimento da Integração entre Oracle OIC e Oracle Sales Cloud
+- **Lab2: **Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud
+- **Lab 3: **Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
+- **Lab 4: **Desenvolvimento de uma tela utilizando o Oracle Visual Builder
 
-## Introduction ##
+## Pré Requisitos
+Será necessário para realizar este Workshop:
+- Instância do Oracle Integration Cloud - OIC
+- Instância do Oracle Mobile Cloud Service - MCS
+- Instância do Oracle Sales Cloud
+- Postman - [Download](https://www.getpostman.com/ "Download")
+- Sugestão em utilizar o navegador Chrome com o touchscreen desligado.  [Desligar o touchscreen no Windows 10](https://support.microsoft.com/en-us/help/4028019/windows-enable-and-disable-your-touchscreen-in-windows-10 "Desligar o touchscreen no Windows 10")
+- Utlizar o navegador na lingua inglesa.  - [Como mudar a língua no Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en "Como mudar a língua no Chrome")
 
-Oracle Cloud is the industry’s broadest and most integrated public cloud. It offers best-in-class services across software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS), and even lets you put Oracle Cloud in your own data center. Oracle Cloud helps organizations drive innovation and business transformation by increasing business agility, lowering costs, and reducing IT complexity. The workshop content shows different aspects of Application Development in the cloud with different set of Oracle Cloud Services.
+## Atividades
 
+#### Lab 1 - Desenvolvimento da Integração entre Oracle OIC e Oracle Sales Cloud
+**Documentação**: Lab1.md
+##### Objetivos
+- Criar um conector REST
+- Criar um conector para o Oracle Sales Cloud
+- Criar uma integração entre o conector rest e o conector Oracle Sales Cloud
 
-## Repository Folder Structure ##
+#### Lab 2 - Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud
+**Documentação**: Lab2.md
+##### Objetivos
+- Desenvolver um processo de negócio que valida se o valor da oportunidade for maior que 5000 USD o gerente deverá aprovar a sua criação 
+- Desenvolver um processo de negócio que valida se o desconto da oportunidade for maior que 50% o gerente deverá aprovar a sua criação
+- Integrar o processo de negócio com a integração criada no Lab 1.
 
-The following directories are contained within this repository:
+#### Lab 3 - Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
+**Documentação**: Lab3.md
+##### Objetivos
+- Criar um conector no Oracle MCS, este conector irá apontar para o processo criado no Lab2. 
+- Criar uma API no Oracle MCS apontando para o conector criado.
+- Criar uma aplicação utilizando o Oracle MAX, esta aplicação irá chamar o processo criado no Lab2 através da API criada no Oracle MCS
 
-**/articles** 
-- This folder will contain interesting Articles on Oracle Technology
-
-**/common** 
-- This folder contains common images and assets used by content in other folders
-
-**/templates** 
-- This folder contains templates used for Articles and Workshops
-
-**/workshops** 
-- This folder will contain subfolders, each with documentation for individual workshops. The documentation is always in Markdown Format. 
-
-----
-
-
-## [Contributing](CONTRIBUTING.md)
-Pull Requests are currently not being accepted. See [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## [License](LICENSE.md)
-Copyright (c) 2014, 2016 Oracle and/or its affiliates
-The Universal Permissive License (UPL), Version 1.0
+#### Lab 4 - Desenvolvimento de uma tela utilizando o Oracle Visual Builder
+**Documentação**: Lab4.md
+##### Objetivos
+- Desenvolver uma aplicação Web com um formulário 
+- Esta aplicação irá chamar o processo criado no Lab2
