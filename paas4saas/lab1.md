@@ -10,8 +10,8 @@ Leia os Links abaixo:
 - Ter acesso ao OIC
 - Ter acesso ao Oracle Sales Cloud
 - Link dos serviços do Sales Cloud - [Veja como obter os links](https://docs.oracle.com/en/cloud/paas/integration-cloud/sales-adapter/prerequisites-creating-connection.html#GUID-8AF6BDD4-A711-480E-B71F-FAD062024A57)
-- [Developing Integrations with Oracle Integration Cloud Service](https://docs.oracle.com/en/cloud/paas/integration-cloud-service/icsug/mapping-data-and-creating-lookups.html) 
-- [Como usar o mapeamento](https://www.youtube.com/watch?v=6xNUpB7z9mA "Mapping Data in Oracle Integration Cloud Service")
+- Ler o material: [Developing Integrations with Oracle Integration Cloud Service](https://docs.oracle.com/en/cloud/paas/integration-cloud-service/icsug/mapping-data-and-creating-lookups.html) 
+- Ver o material: [Como usar o mapeamento](https://www.youtube.com/watch?v=6xNUpB7z9mA "Mapping Data in Oracle Integration Cloud Service")
 
 ### Passo 1
 **1.1** Faça o login da sua conta no Oracle Cloud. Link será entregue pelo instrutor.
@@ -229,5 +229,56 @@ Caso você tenha dúvidas de como efetuar o mapeamento veja o link que está na 
 ![image035.png](images/1/image035.png)
 
 
+### Passo 4
 
-[mapeamento]: https://github.com/matheuzum/Oracle/blob/master/paas4saas/lab1.md#objetivos "Como usar o mapeamento"
+**4.1** Ative a integração e habilite o rastreamento conforme imagem abaixo:
+
+![image036.png](images/1/image036.png)
+
+Habilite as opções conforme imagem abaixo:
+
+![image037.png](images/1/image037.png)
+
+**4.2** Após a ativação, recupere o *endpoint* através do link *engrenagem*.
+
+![image038.png](images/1/image038.png)
+
+![image039.png](images/1/image039.png)
+
+**4.3** Abre o software Postam, você pode fazer o download [aqui](https://www.getpostman.com/ "Postman"). Preencha as informações conforme imagem abaixo:
+
+O método você deverá colocar **POST** e a **URL** deverá ser a URL recuperada no item 4.2.
+
+![image040.png](images/1/image040.png)
+
+**4.4** Clique em **Authorization** e preencha os campos: **Type** deverá ser **Basic Auth** e o Username e Password deverá ser o utilizado o que você utiliza para logar no Oracle Integration Cloud - OIC. 
+
+![image041.png](images/1/image041.png)
+
+**4.5** Clique em **Body** e selecione a opção **raw** e coloque o json de teste: 
+```json
+{
+	"nomeOportunidade" : "Nome da Oportuniade",
+	"loginOwner" : "amanda.bell",
+	"probabilidadeGanhar" : 10
+}
+```
+
+![image042.png](images/1/image042.png)
+
+**4.5** Clique em **Send** e espere a resposta. Ela deverá conter um json de resposta, parecido com a imagem abaixo:
+
+![image043.png](images/1/image043.png)
+
+**4.6** Volte para o Oracle Integration Cloud - OIC e clique em **<**. Vá depois em **Monitoring** -> **Tracking**. Observe que a sua mensagem está aparecendo em verde. Clique em cima da mensagem e observe o caminho feito pela mensagem. 
+
+![image044.png](images/1/image044.png)
+
+![image045.png](images/1/image045.png)
+
+![image046.png](images/1/image046.png)
+
+![image047.png](images/1/image047.png)
+
+
+[mapeamento]: https://github.com/matheuzum/Oracle/blob/master/paas4saas/lab1.md#pr%C3%A9-requisitos "Como usar o mapeamento"
