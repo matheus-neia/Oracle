@@ -32,7 +32,7 @@ Leia os Links abaixo:
 
 ![image004.png](images/1/image004.png "image004.png")
 
-**1.5** Insira o nome `RestAdapterWorkshop_XX`, onde XX será o número entregue pelo instrutor. Em **Role** selecione  `Trigger` e então clique em **Create**. 
+**1.5** Insira o nome `RestAdapterWorkshop_XX`, onde XX será o número entregue pelo instrutor. Em **Role** selecione  **Trigger** e então clique em **Create**. 
 
 ![image005.png](images/1/image005.png "image005.png")
 
@@ -44,14 +44,15 @@ Leia os Links abaixo:
 
 
 ### Passo 2
-**2.0** Repita os passos 1.3, 1.4 e 1.5. Porém agora o nome do conector será *Oracle Sales Cloud*. O nome da conexão insira `SalesCloudWorkshop_XX` (Onde XX será entregue pelo instrutor). Em **Role** selecione `Invoke` depois vá em **Create**.
+**2.0** Repita os passos 1.3, 1.4 e 1.5. Porém agora o nome do conector será *Oracle Sales Cloud*. O nome da conexão insira `SalesCloudWorkshop_XX` (Onde XX será entregue pelo instrutor). Em **Role** selecione **Invoke** depois vá em **Create**.
 
-**2.1** Na página de configuração do conector no seção **Connection Properties** clique em **Configure Connectivity** Configure a conexão utilizando a URL do *OSC - Oracle Sales Cloud*. Para obter as configurações necessários veja o [link](https://docs.oracle.com/en/cloud/paas/integration-cloud/sales-adapter/prerequisites-creating-connection.html#GUID-8AF6BDD4-A711-480E-B71F-FAD062024A57 "link").
+**2.1** Na página de configuração do conector no seção **Connection Properties** clique em **Configure Connectivity** Configure a conexão utilizando a URL do *OSC - Oracle Sales Cloud*. Para obter as configurações necessários veja o [link](https://docs.oracle.com/en/cloud/paas/integration-cloud/sales-adapter/prerequisites-creating-connection.html#GUID-8AF6BDD4-A711-480E-B71F-FAD062024A57).
 
 ![image007.png](images/1/image007.png "image007.png")
 
-**2.1.1** Preencha em **OSC Services Catalog WSDL URL** com a informação que você pegou no item 1.8 ou utilize esta: `https://testingapplication.com/fscmService/ServiceCatalogService?WSDL` e substitua testingapplication.com pelo domínio do seu ambiente do OSC. 
-**2.1.2** Preencham em **Interface Catalog URL (optional)** com a informação que você pegou no item 1.8 ou utilize esta: `https://testingapplication.com/helpPortalApi/otherResources/latest/interfaceCatalogs` e substitua testingapplication.com pelo domínio do seu ambiente do OSC.
+**2.1.1** Preencha em **OSC Services Catalog WSDL URL** com a informação que você pegou no item [Link dos serviços do Sales Cloud](https://github.com/matheuzum/Oracle/blob/master/paas4saas/lab1.md#pr%C3%A9-requisitos) ou utilize esta: `https://testingapplication.com/fscmService/ServiceCatalogService?WSDL` e substitua testingapplication.com pelo domínio do seu ambiente do OSC.
+
+**2.1.2** Preencham em **Interface Catalog URL (optional)** com a informação que você pegou no item [Link dos serviços do Sales Cloud](https://github.com/matheuzum/Oracle/blob/master/paas4saas/lab1.md#pr%C3%A9-requisitos) ou utilize esta: `https://testingapplication.com/helpPortalApi/otherResources/latest/interfaceCatalogs` e substitua testingapplication.com pelo domínio do seu ambiente do OSC.
 
 ![image008.png](images/1/image008.png "image008.png")
 
@@ -59,7 +60,7 @@ Leia os Links abaixo:
 
 ![image009.png](images/1/image009.png "image009.png")
 
-**2.2** Agora clique em **Test** e aguarda até o *Oracle Integration Cloud* efetuar o teste e validar a conexão com o OSC. Após o teste efetuar com sucesso observe o *label* de porcentagem, ele deverá aparecer 100% conforme figura abaixo.
+**2.2** Agora clique em **Test** e aguarde até o *Oracle Integration Cloud* efetuar o teste e validar a conexão com o OSC. Após o término do teste, observe o *label* de porcentagem, ele deverá aparecer 100% conforme figura abaixo:
 
 ![image010.png](images/1/image010.png "image010.png")
 
@@ -71,7 +72,7 @@ Leia os Links abaixo:
 
 ![image011.png](images/1/image011.png "image011.png")
 
-**3.2** Preencha o nome da integração como `CreateOppOSC_XX` e depois clique em **Create**.
+**3.2** Preencha o nome da integração como `CreateOppOSC_XX` onde XX será o número entregue pelo instrutor. Depois clique em **Create**.
 
 ![image012.png](images/1/image012.png "image012.png")
 
@@ -87,7 +88,7 @@ Leia os Links abaixo:
 
 **3.4.2** Clique em  **Next >**
 
-Agora selecione a opção **JSON Sample** e depois clique em **<<< inline >>>**
+Agora no campo **Select the request payload format** selecione a opção **JSON Sample** e depois clique em **<<< inline >>>**
 
 ![image014.png](images/1/image014.png)
 
@@ -108,7 +109,7 @@ Agora selecione a opção **JSON Sample** e depois clique em **<<< inline >>>**
 
 ![image015_1.png](images/1/image015_1.png)
 
-**3.4.4** Agora selecione a opção **JSON Sample** e depois clique em **<<< inline >>>**
+**3.4.4** Agora no campo **Select the response payload format** selecione a opção **JSON Sample** e depois clique em **<<< inline >>>**
 
 ![image016.png](images/1/image016.png)
 
@@ -124,7 +125,7 @@ Agora selecione a opção **JSON Sample** e depois clique em **<<< inline >>>**
 
 ![image017_1.png](images/1/image017_1.png)
 
-Tela final, confira se configurou corretamente em **Endpoint Summary** e depois clique em **Done**
+Na tela *Summary*, confira se as configurações estão correstas em **Endpoint Summary** e depois clique em **Done**
 
 ![image018.png](images/1/image018.png)
 
@@ -134,16 +135,16 @@ Tela final, confira se configurou corretamente em **Endpoint Summary** e depois 
 
 **3.6** Configurando o adaptador SalesCloud
 
-**3.6.1** Preenche os campos conforme imagens abaixo:
+**3.6.1** Preenche os campos conforme imagens abaixo e depois em **Next >**.
 
 ![image020.png](images/1/image020.png)
 
-**3.6.2** Clique em  **Next >**
-**3.6.3** No Campo **Browse By** selecione **Business Objects** (1). No campo **Select a Business Object** escolha a opção **Opportunity : OpportunityService** (2) e no campo **Select the Operation to Perform on the Business Object** selecione a opção **createOpportunity**, conforme imagem abaixo, e depois clique em **Next >**.
+
+**3.6.2** No Campo **Browse By** selecione **Business Objects** (1). No campo **Select a Business Object** escolha a opção **Opportunity : OpportunityService** (2) e no campo **Select the Operation to Perform on the Business Object** selecione a opção **createOpportunity**, conforme imagem abaixo, e depois clique em **Next >**.
 
 ![image021.png](images/1/image021.png)
 
-**3.6.4** Clique em  **Done**
+**3.6.3** Clique em  **Done**
 
 ![image022.png](images/1/image022.png)
 
@@ -157,34 +158,36 @@ Tela final, confira se configurou corretamente em **Endpoint Summary** e depois 
 
 ![image023_1.png](images/1/image023_1.png)
 
-**3.7.3** No Campo **Browse By** selecione **Services**. No campo **Select a Service** escolha a opção **ResourceSercice** e no campo **Select the Operation to Perform on the Business Service** selecione a opção **findResource**, conforme imagem abaixo, e depois clique em **Next >**.
+**3.7.3** No Campo **Browse By** selecione **Services**. No campo **Select a Service** escolha a opção **ResourceService** e no campo **Select the Operation to Perform on the Business Service** selecione a opção **findResource**, conforme imagem abaixo, e depois clique em **Next >**.
 
 ![image024.png](images/1/image024.png)
 
-**3.8** Mapeamento a chamada para recuperar o ID do *Owner* da Oportuniade:
+**3.8** Mapeamento a chamada para recuperar o ID do *Owner* da Oportuniade.
+
 Caso você tenha dúvidas de como efetuar o mapeamento veja o link que está na seção Pré Requisitos: Como usar o mapeamento. [[1]][mapeamento]
 
 **3.8.1** Clique no mapeamento mais a esquerda da tela e depois em **+**, conforme figura abaixo:
 
 ![image025.png](images/1/image025.png)
 
-**3.8.2** Clique no campo **attribute** conforme imagem abaixo:
+**3.8.2** Vá navegando do lado direito da tela, abrindo os campos até chegar no campo **attribute** conforme imagem abaixo. Clique em cima do campo **attribute** para abrir a tela de construção de mapeamento.
 
 ![image026.png](images/1/image026.png)
 
-**3.8.3** No lugar indicado coloque o valor `Username`, clique em **Save** e depois **Close**:
+**3.8.3** No lugar indicado em vermelho coloque o valor `Username`, clique em **Save** e depois **Close**:
 
 ![image027.png](images/1/image027.png)
 
-**3.8.4** Repista os passos 3.8.1 e 3.8.2 para o campo **operator** e o valor será `=`
+**3.8.4** Repita os passos 3.8.1 e 3.8.2 para o campo **operator**. O valor será `=`
 
-**3.8.5** Por último arraste, utilizando o mouse, o campo `loginOwner` para o campo **value**
+**3.8.5** Por último arraste, utilizando o mouse, o campo `loginOwner` para o campo **value**. A sua tela de mapeamento deverá ficar igual a tela abaixo:
 
 ![image028.png](images/1/image028.png)
 
-**3.8.6** Clique em **Validate** deopis em **Close**
+**3.8.6** Clique em **Validate** depois em **Close**
 
-**3.9** Mapeamento a chamada para chamar a conexão do Sales Cloud:
+**3.9** Mapeamento da chamado para a conexão do Sales Cloud:
+
 Caso você tenha dúvidas de como efetuar o mapeamento veja o link que está na seção Pré Requisitos: Como usar o mapeamento. [[1]][mapeamento]
 
 **3.9.1** Clique no mapeamento mais ao centro e acima da tela e depois em **+**, conforme figura abaixo:
@@ -200,22 +203,24 @@ Caso você tenha dúvidas de como efetuar o mapeamento veja o link que está na 
 
 ![image030.png](images/1/image030.png)
 
-**3.9.3** Clique em **Validate** deopis em **Close**
+**3.9.3** Clique em **Validate** depois em **Close**
 
-**3.10** Mapeamento de retorno da chamada do Sales Cloud:
+**3.10** Mapeamento de retorno da chamada do Sales Cloud
+
 **3.10.1** Clique no mapeamento mais ao centro e abaixo da tela e depois em **+**, conforme figura abaixo:
 
 ![image031.png](images/1/image031.png)
 
 **3.10.2** Faça o mapeamento arrastando os campos da esquerda para a direita conforme figura abaixo:
 
-    OptyID ===> idOportunidade
+    OptyId ===> idOportunidade
 
 ![image032.png](images/1/image032.png)
 
-**3.10.3** Clique em **Validate** deopis em **Close**
+**3.10.3** Clique em **Validate** depois em **Close**
 
 **3.11** Rastreamento das chamadas
+
 **3.11.1** Clique em **Tracking**, conforme figura abaixo:
 
 ![image033.png](images/1/image033.png)
@@ -239,7 +244,7 @@ Habilite as opções conforme imagem abaixo:
 
 ![image037.png](images/1/image037.png)
 
-**4.2** Após a ativação, recupere o *endpoint* através do link *engrenagem*.
+**4.2** Após a ativação, recupere o *endpoint* através do ícone *engrenagem*.
 
 ![image038.png](images/1/image038.png)
 
@@ -251,7 +256,7 @@ O método você deverá colocar **POST** e a **URL** deverá ser a URL recuperad
 
 ![image040.png](images/1/image040.png)
 
-**4.4** Clique em **Authorization** e preencha os campos: **Type** deverá ser **Basic Auth** e o Username e Password deverá ser o utilizado o que você utiliza para logar no Oracle Integration Cloud - OIC. 
+**4.4** Clique em **Authorization** e preencha os campos: **Type** deverá ser **Basic Auth** e o **Username** e **Password** deverão ser utilizados os que você utilizou para se logar no Oracle Integration Cloud - OIC. 
 
 ![image041.png](images/1/image041.png)
 
@@ -282,5 +287,7 @@ O método você deverá colocar **POST** e a **URL** deverá ser a URL recuperad
 
 ![image047.png](images/1/image048.png)
 
+
+Agora você está pronto para ir para o Lab2: Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud
 
 [mapeamento]: https://github.com/matheuzum/Oracle/blob/master/paas4saas/lab1.md#pr%C3%A9-requisitos "Como usar o mapeamento"
