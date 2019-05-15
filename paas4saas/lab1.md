@@ -288,6 +288,6 @@ O método você deverá colocar **POST** e a **URL** deverá ser a URL recuperad
 ![image047.png](images/1/image048.png)
 
 
-Agora você está pronto para ir para o Lab2: Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud
+Agora você está pronto para ir para o **Lab2: Desenvolvimento de um processo de negócio utilizando Process Cloud Service - OIC e integrando com Oracle Sales Cloud**
 
 [mapeamento]: https://github.com/matheuzum/Oracle/blob/master/paas4saas/lab1.md#pr%C3%A9-requisitos "Como usar o mapeamento"
