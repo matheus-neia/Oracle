@@ -39,6 +39,8 @@ Leia os Links abaixo:
 
 ![image006.png](images/2/image006.png)
 
+Resultado após a criação
+
 ![image006_1.png](images/2/image006_1.png)
 
 ### Passo 3
@@ -63,7 +65,7 @@ Leia os Links abaixo:
 
 **4.1** Volte para o processo de negócio desenhado. Do lado direito da tela selecione a opção **Process** -> **ProcessCreateOppOnSalesCloud**. 
 
-**4.2** Clique no elemento *Call OIC Integration* e depois no ícone de opções e depois em **Open Properties**
+**4.2** Clique no elemento *Call OIC Integration*, depois no ícone de opções -> **Open Properties**
 
 ![image009.png](images/2/image009.png)
 
@@ -75,7 +77,7 @@ Leia os Links abaixo:
 
 ![image011.png](images/2/image011.png)
 
-Se estiver tudo correto e aparecer uma mensagem parecido como **The last CreateOpp_XX application validation was successful** em verde clique no ícone de teste, conforme imagem abaixo. Caso contrário corrija os erros que apareceram. 
+Se estiver tudo correto aparecerá uma mensagem parecida como *The last CreateOpp_XX application validation was successful* em verde. Clique no ícone de teste, conforme imagem abaixo. Caso contrário corrija os erros que apareceram. 
 
 ![image012.png](images/2/image012.png)
 
@@ -89,7 +91,7 @@ Se estiver tudo correto e aparecer uma mensagem parecido como **The last CreateO
 
 ![image015.png](images/2/image015.png)
 
-**4.7** O processo irá andar e deverá parar na atividade **User Task**. Quando o processo parar nesta atividade clique no ícone indicado para aprovar a criação da oportuniade e depois clique em **APROVADO**.
+**4.7** O processo irá andar e deverá parar na atividade **User Task**. Quando o processo parar nesta atividade clique no ícone indicado e depois clique em **APROVADO**, para aprovar a criação da oportuniade.
 
 ![image016.png](images/2/image016.png)
 
@@ -105,7 +107,7 @@ Se estiver tudo correto e aparecer uma mensagem parecido como **The last CreateO
 
 **4.10** Agora que o processo funcionou corretamente precisamos salvar e publicar uma versão para *deploy*. Para isso clique em **Save**
 
-**4.11** Clique em **Publish** (1), selecione a opção **Make snapshot** (2) e preenche com a versão V_XX e preencha o campo **Comment** (3), depois clique em **Publish**.(4)
+**4.11** Clique em **Publish** (1), selecione a opção **Make snapshot** (2) e preencha a versão com `V_XX` e o campo **Comment** (3), depois clique em **Publish**. (4)
 
 ![image020.png](images/2/image020.png)
 
@@ -125,7 +127,7 @@ Confirme se sua versão foi publicada e clique em **Close**.
 
 ### Passo 5
 
-**5.1** Agora vamos selecionar os usuário que terão o papel de vendedor, gerente de vendas, revisor do processo e dono do processo. Para isso vá até a página inicial do Oracle Integration Cloud e depois clique em **My Tasks** -> **Workspace** -> **Administration**.
+**5.1** Agora vamos selecionar os usuários que terão o papel de vendedor, gerente de vendas, revisor do processo e dono do processo. Para isso vá até a página inicial do Oracle Integration Cloud e depois clique em **My Tasks** -> **Workspace** -> **Administration**.
 
 ![image025.png](images/2/image025.png)
 
@@ -137,7 +139,7 @@ Clique em **Administration**
 
 ![image027.png](images/2/image027.png)
 
-**5.2** Agora pesquisa a aplicação que você criou e fez o deploy no passo 4. Para isso siga clique na seguinte ordem: **Manage Roles** (1) -> Pesquisa utilizando o nome da sua aplicação (2), meu exemplo é `CreateOpp_XX` -> Clique em Pesquisar (3)
+**5.2** Agora pesquisa a aplicação que você criou e fez o deploy no passo 4. Para isso siga na seguinte ordem: **Manage Roles** (1) -> Pesquise utilizando o nome da sua aplicação (2), meu exemplo é `CreateOpp_XX` -> Clique em Pesquisar (3)
 
 ![image028.png](images/2/image028.png)
 
@@ -155,11 +157,11 @@ Clique em **Administration**
 
 Vamos novamente criar uma oportunidade, agora usando a aplicação em produção.
 
-**6.1** Selecione **My Tasks** -> **Initiate Request**.
+**6.1** Para isso vá até a página inicial do Oracle Integration Cloud e selecione **My Tasks** -> **Initiate Request**.
 
 ![image030.png](images/2/image030.png)
 
-Depois clique no nome da sua aplicação que deverá estar com o nome `Create Opportunity(1.0.0)`.
+Depois clique no nome da sua aplicação que deverá estar com o nome `Create Opportunity(1.0.0)`, fique com o mouse em cima do ícone para você verificar se é a sua aplicação.
 
 ![image031.png](images/2/image031.png)
 
@@ -167,7 +169,7 @@ Depois clique no nome da sua aplicação que deverá estar com o nome `Create Op
 
 ![image032.png](images/2/image032.png)
 
-**6.3** Crie mais uma requisição, porém agora com os valores, conforme tela abaixo. O maior importante é manter o valor e quantidade do produto iguais. 
+**6.3** Crie mais uma requisição, porém agora com os valores, conforme tela abaixo. Para o campo **Quantidade do Produto** coloque 300 e **Preço do Produto** preencha com 600 e depois clique em **Submit**. 
 
 ![image033.png](images/2/image033.png)
 
@@ -177,7 +179,7 @@ Depois clique no nome da sua aplicação que deverá estar com o nome `Create Op
 
 ![image035.png](images/2/image035.png)
 
-Clique em cima do nome do processo
+Clique em cima do nome do processo `CreateOpp_XX`
 
 ![image036.png](images/2/image036.png)
 
@@ -185,10 +187,14 @@ Clique em **APROVADO**
 
 ![image037.png](images/2/image037.png)
 
-**6.5** Volte em **Integrations** -> **Monitoring** -> **Tracking** e perceba que as duas requisões para o Oracle Sales Cloud ocorreram com sucesso. 
+**6.5** Vá até a página inicial do Oracle Integration Cloud e nagegue pelo menu **Integrations** -> **Monitoring** -> **Tracking** e perceba que as duas requisões para o Oracle Sales Cloud ocorreram com sucesso. 
 
 ![image038.png](images/2/image038.png)
 
 ![image039.png](images/2/image039.png)
 
+As duas chamadas do processo, chamaram o Integration que realizou a operação de cadastrar a oportunidade no Oracle Sales Cloud com sucesso.
+
 ![image040.png](images/2/image040.png)
+
+Agora você está pronto para ir para o **Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS**
