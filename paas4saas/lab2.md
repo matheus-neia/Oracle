@@ -197,4 +197,6 @@ As duas chamadas do processo, chamaram o Integration que realizou a operação d
 
 ![image040.png](images/2/image040.png)
 
-Agora você está pronto para ir para o **Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS**
+Agora você está pronto para realizar os Labs:
+- **Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS**
+- **Lab4: Desenvolvimento de uma tela utilizando o Oracle Visual Builder**
