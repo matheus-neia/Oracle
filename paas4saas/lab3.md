@@ -1,4 +1,4 @@
-# Lab 2 - Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
+# Lab 3 - Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
 
 ## Objetivos
 - Passo 1: Criar um conector conector com o Process Cloud
@@ -89,26 +89,6 @@ Clique em **Save** e depois **Select**, vá para a próxima tela, tela de teste,
 }
 ```
 
-`
-{
-   "Header": null,
-   "Body": {
-      "start": {
-         "formArg": {
-            "Opportunity": {
-               "opportunityName": "opportunityName45",
-               "owner": "owner46",
-               "winProb": "10",
-               "productName": "productName48",
-               "productPrice": 0,
-               "productQty": 0
-            }
-         }
-      }
-   }
-}
-`
-
 Nos campos de autenticação escolha em **Backend** a opção de `bots_samples` e preencha com seu username e password que você utiliza para conectar no Oracle Cloud.
 
 ![image011.png](images/3/image011.png)
@@ -119,7 +99,7 @@ Nos campos de autenticação escolha em **Backend** a opção de `bots_samples` 
 
 ### Passo 2
 
-**2.1** Na tela inicial do Oracle Mobile Hub vá em **APIs** -> **+ New Api** -> **Express API**.
+**2.1** Na tela inicial do Oracle Mobile Hub vá em **Development** -> **APIs** -> **+ New Api** -> **Express API**.
 
 ![image013.png](images/3/image013.png)
 
@@ -181,6 +161,7 @@ O arquivo baixado terá o nome parecido com `createoppapixx.zip`. Descompacte o 
 
 
 **2.7** Vamos escrever a chamada da API em Javascript.
+
 **2.7.1** Edite o arquivo `package.json` e adicione na linha 9 o conector que criamos no passo 1. Ele deverá ficar parecido com o código abaixo:
 
 ```json
@@ -206,33 +187,35 @@ Lembre-se que **CreateOPPConectorPCS_XX** deverá ser substituido pelo nome do c
 Este método deverá conter o seguinte código:
 
 ```javascript
-var sdk = req.oracleMobile;
-var optionsList = {
-		Header: null,
-		Body: {
+service.post('/mobile/custom/CreateOppAPIXX/opportunity', function(req,res) {
+	var sdk = req.oracleMobile;
+	var optionsList = {
+			Header: null,
+			Body: {
 				"start" : {
-				"formArg" : {
-				"Opportunity": {
-				"opportunityName": req.body['Name'],
-						"owner": req.body['Owner'],
-						"winProb": req.body['Win Prob'],
-						"productName": req.body['Product Name'],
-						"productPrice": req.body['Product Price'],
-						"productQty": req.body['Product Qty']
+					"formArg" : {
+						"Opportunity": {
+							"opportunityName": req.body['name'],
+			            	"owner": req.body['owner'],
+							"winProb": req.body['winProb'],
+							"productName": req.body['productName'],
+							"productPrice": req.body['productPrice'],
+							"productQty": req.body['productQty']
+						}
 					}
 				}
 			}
-		}
-	};
+		};
 
-sdk.connectors.post('Teste2', 'start', optionsList, {inType: 'json', versionToInvoke: '1.0'}).then(
-	function (result) {
-		res.status(result.statusCode).send(result.result);
-	},
-	function (error) {
-		res.status(error.statusCode).send(error.error);
-	}
-);
+	sdk.connectors.post('CreateOppPCSConnectorXX', 'start', optionsList, {inType: 'json', versionToInvoke: '1.0'}).then(
+		function (result) {
+			res.status(result.statusCode).send(result.result);
+		},
+		function (error) {
+			res.status(error.statusCode).send(error.error);
+		}
+	);
+});
 ```
 
 **2.7.3** Agora salve todos os arquivos e compacte novamente com o nome `createoppapixx.zip`. Com este .zip em mãos faça o upload no Oracle Mobile Hub através do link **Upload an implementation archive** conforme tela abaixo, depois clique em **Test**.
@@ -244,9 +227,160 @@ sdk.connectors.post('Teste2', 'start', optionsList, {inType: 'json', versionToIn
 ![image025.png](images/3/image025.png)
 
 Agora clique em **Test Endpoint**
-
+	
 ![image026.png](images/3/image026.png)
 
-O resultado deverá ser com o Status 200, algo parecido com a imagem abaixo:
+O resultado deverá ser o status 200, algo parecido com a imagem abaixo:
 
 ![image027.png](images/3/image027.png)
+
+**2.9** Agora vamos publicar o conector e a API desenvolvida, dessa forma o Oracle MAX irá conseguir enchergar a API. 
+
+Publique o conector conforme imagem abaixo:
+
+![image028.png](images/3/image028.png)
+
+Publique a API conforme imagem abaixo:
+
+![image029.png](images/3/image029.png)
+
+### Passo 3
+
+**3.1** Na tela inicial do Oracle Mobile Hub vá em **Development** -> **MAX Apps** -> **New Application**.
+
+![image030.png](images/3/image030.png)
+
+**New Application**
+
+![image031.png](images/3/image031.png)
+
+**3.2** Na tela de criação, siga as instruções conforme as telas abaixo, até chegar na opção de criar a aplicação.
+
+- **Application Name** : `Create Opportunity XX`
+
+![image032.png](images/3/image032.png)
+
+![image033.png](images/3/image033.png)
+
+- **Screen Title** : `Opportunity`
+
+![image034.png](images/3/image034.png)
+
+![image035.png](images/3/image035.png)
+
+![image036.png](images/3/image036.png)
+
+**3.3** Na tela inicial da aplicação, clique no ícone **Data** (1) -> **Applications Services +** (2). A tela que abrirá escolhe a API criada no passo 2.9., no meu caso é a `Create Opp API XX` (3) e por fim clique em **Select** (4).
+
+![image037.png](images/3/image037.png)
+
+**3.4** Clique no ícone **Components**, arraste o component **Layout -> Form** para tela do celular.
+
+![image038.png](images/3/image038.png)
+
+**3.5** Do lado direito da tela clique em **Add Data** e depois selecione **Opportunity**
+
+![image040.png](images/3/image040.png)
+
+Selecione **Opportunity**
+
+![image041.png](images/3/image041.png)
+
+**3.6** Faça o mapeamento de todos os campos do **Business Object** em **Form Component Fields**, arrastando o que está no campo **Opportunity** para **Form Component Fields**, retire apenas o **id**, por fim clique em **Finish**. 
+
+![image042.png](images/3/image042.png)
+
+Após clicar em Finish:
+
+![image043.png](images/3/image043.png)
+
+**3.7** Vamos criar o botão de salvar a oportunidade. Para isso clique no ícone **Application Screens** (1), em **Opportuninity** -> **Edit** (2) -> **Header Buttons** (3).
+
+![image046.png](images/3/image046.png)
+
+Em **Right Side** -> **Button +** -> **Button Label** digite `Save`
+
+![image048.png](images/3/image048.png)
+
+Digite `Save`
+
+![image049.png](images/3/image049.png)
+
+**3.8** Na aba **Action** clique em **ADD ACTION (TAP BUTTON)**, clique em **Tap** novamente
+
+![image050.png](images/3/image050.png)
+
+**3.9** Em Configure Action arraste a ação que está localizada em **Business Objects** -> **Create Opportunity** para a direita
+
+![image051.png](images/3/image051.png)
+
+Depois arraste as opções **Refresh All Data** e **Navigate to Screen**. Clique em **Business Action Mapper**
+
+![image052.png](images/3/image052.png)
+
+**3.10** Faça o mapeamento dos campos que estão em **Current Screen** para **Action Parameters** conforme tela abaixo, e depois clique em **Finish**:
+
+![image053.png](images/3/image053.png)
+
+Clique em **Save** conforme imagem:
+
+![image054.png](images/3/image054.png)
+
+**3.11** Clique no ícone **Application Screens** -> **New Screen**
+
+![image055.png](images/3/image055.png)
+
+Na tela de criação, siga as instruções conforme as telas abaixo, até chegar ao final.
+
+![image056.png](images/3/image056.png)
+
+- **Screen Title** : `Success`
+
+![image057.png](images/3/image057.png)
+
+Clique em **Finish**
+
+![image058.png](images/3/image058.png)
+
+**3.12** Nesta nova tela vamos colocar uma imagem de sucesso. Esta tela será chamada apóis a criação da oportuniadde. Para isso Arraste o componente **MEDIA -> Image** para a tela de *design*. 
+
+![image059.png](images/3/image059.png)
+
+Clique na aba **Data** e depois em **Upload a custom image** e selecione a imagem like-red.png que está na pasta files. 
+
+![image060.png](images/3/image060.png)
+
+**3.13** Clique no ícone **Application Screens** e selecione a tela **Opportunity** (Este nome pode variar dependendo do nome da tela que você colocou no passo 3.2). 
+Após selecionar a tela, clique na aba **Actions** -> **Create Opportunity**.
+
+![image061.png](images/3/image061.png)
+
+**3.14** Altere a ação **Navigate to Screen** e escolhe a tela chamada `Success` (Este nome pode variar dependendo do nome da tela que você colocou no passo 3.11). Depois clique em **Save**.
+
+![image062.png](images/3/image062.png)
+
+###Passo 4
+
+**4.1** Clique no ícone de teste conforme imagem abaixo.
+
+![image063.png](images/3/image063.png)
+
+**4.2** Insira seus dados de login para simular o teste. Após isso preencha os campos conforme figura abaixo e depois clique em **Save**
+
+![image064.png](images/3/image064.png)
+
+Deverá ser apresentada a tela de `Success`.
+
+![image065.png](images/3/image065.png)
+
+**4.3** Agora você pode realizar o teste em seu próprio celular, baixando o aplicativo Oracle MAX em seu celular através dos links abaixo, depois clique no ícone **Publish** e siga as instruções:
+
+Google Play:
+
+https://play.google.com/store/apps/details?id=com.oracle.max&hl=en
+
+Apple Store:
+
+https://itunes.apple.com/us/app/oracle-max/id1091771940?mt=8
+
+![image066.png](images/3/image066.png)
