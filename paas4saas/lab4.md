@@ -125,13 +125,13 @@ Siga os cliques conforme imagem abaixo
 
 ![image024.png](images/4/image024.png)
 
-**2.2** Clique no **+** para adicionar o processo (1), desligue a opção de incluir testes (2), deixe o **Alias** como `ProcessCreateOpp` (3) e clique em **Add**.
+**2.2** Clique no **+** para adicionar o processo (1), desligue a opção de incluir testes (2), deixe o **Alias** como `ProcessCreateOpp` (3) e clique em **Add**. (4)
 
 ![image026.png](images/4/image026.png)
 
 ### Passo 3
 
-**3.1** Vamos criar um evento para o botão **Save**. Para isso segui os cliques conforme imagem abaixo:
+**3.1** Vamos criar um evento para o botão **Save**. Para isso siga os cliques conforme imagem abaixo:
 
 ![image027.png](images/4/image027.png)
 
@@ -139,7 +139,7 @@ Clique em **Quick Start: 'ojAction'**
 
 ![image028.png](images/4/image028.png)
 
-**3.2** Arraste a ação **Start Process** conforme inficado na imagem abaixo:
+**3.2** Arraste a ação **Start Process** conforme indicado na imagem abaixo:
 
 ![image029.png](images/4/image029.png)
 
@@ -147,7 +147,7 @@ Clique em **Select Process**
 
 ![image030.png](images/4/image030.png)
 
-Selecione o processo com o nome do Alias que você deu no passo 2.2
+Selecione o processo com o nome do alias que você deu no passo 2.2. No meu caso **ProcessCreateOpp -> Start**
 
 ![image031.png](images/4/image031.png)
 
@@ -155,9 +155,16 @@ Selecione o processo com o nome do Alias que você deu no passo 2.2
 
 ![image032.png](images/4/image032.png)
 
-Faça o mapeamento dos campos conforme imagens abaixo:
+Faça o mapeamento do **Opportuniy -> Name** para **opportuniy -> opportunityName**  conforme imagen abaixo:
 
 ![image033.png](images/4/image033.png)
+
+Agora faça os demais mapeamentos dos campos
+- owner
+- productName
+- productPrice
+- productQty
+- winProb
 
 ![image034.png](images/4/image034.png)
 
@@ -172,9 +179,9 @@ Faça o mapeamento dos campos conforme imagens abaixo:
 ![image036.png](images/4/image036.png)
 
 
-Clique em **Save**
-
 ![image037.png](images/4/image037.png)
+
+Clique em **Save**
 
 Você deverá receber uma mensagem parecida como esta:
 
