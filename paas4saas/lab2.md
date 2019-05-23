@@ -14,7 +14,7 @@ Leia os Links abaixo:
 - Ver o material: [Como usar o mapeamento](https://www.youtube.com/watch?v=7sjLVKJeCrU "Explore a Simple Approval Process Application")
 
 ### Passo 1
-**1.1** Faça o login da sua conta no Oracle Cloud. Link será entregue pelo instrutor.
+**1.1** Faça o login da sua conta no Oracle Integration Cloud. Link será entregue pelo instrutor.
 
 ![image001.png](images/2/image001.png)
 
@@ -26,12 +26,14 @@ Leia os Links abaixo:
 
 ![image003.png](images/2/image003.png)
 
+Tela após a importação
+
 ![image004.png](images/2/image004.png)
 
 
 ### Passo 2
 
-**2.1** Do lado direito da tela selecione a opção **Integrations** -> **Create** -> **Use a Integration**
+**2.1** Do lado esquerdo da tela selecione a opção **Integrations** -> **Create** -> **Use a Integration**
 
 ![image005.png](images/2/image005.png)
 
@@ -49,7 +51,7 @@ Resultado após a criação
 
 ![image007.png](images/2/image007.png)
 
-**3.2** Faça uma análise do processo criado, ele contempla vários exemplos como o componente *User Task* e *Decision*. Navegue nas telas para entender como foi desenvolvido. 
+**3.2** Faça uma análise do processo criado, ele contempla vários exemplos como os componentes *User Task* e *Decision*. Navegue nas telas para entender como foi desenvolvido. 
 
 ![image008.png](images/2/image008.png)
 
@@ -57,7 +59,8 @@ Resultado após a criação
 
 ![image008_1.png](images/2/image008_1.png)
 
-**3.4** Observe como foi implementado a tabela de decisão. Caso você queira mais informações acesse a documentação: [Decision Models](https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/create-decisions.html)
+**3.4** Observe como foi implementado a tabela de decisão. 
+> Caso você queira mais informações acesse a documentação: [Decision Models](https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/create-decisions.html)
 
 ![image008_2.png](images/2/image008_2.png)
 
@@ -143,7 +146,7 @@ Clique em **Administration**
 
 ![image028.png](images/2/image028.png)
 
-**5.3** Adicione um usuário para o papel `CreateOpp_XX.Sales Person`. Para isso siga os passos clicando na seguinte ordem: **CreateOpp_XX.Sales Person** (1) -> **Add Member** (2) -> Pesquisa o seu usuário que você fez login no OIC (3) -> selecione seu usuário (4) -> **OK** (5) -> **Save** (6) 
+**5.3** Adicione um usuário para o papel `CreateOpp_XX.Sales Person`. Para isso siga os passos clicando na seguinte ordem: **CreateOpp_XX.Sales Person** (1) -> **Add Member** (2) -> Pesquisa o seu usuário que você está utilizando no OIC (3) -> selecione seu usuário (4) -> **OK** (5) -> **Save** (6) 
 
 ![image029.png](images/2/image029.png)
 
@@ -198,5 +201,5 @@ As duas chamadas do processo, chamaram o Integration que realizou a operação d
 ![image040.png](images/2/image040.png)
 
 Agora você está pronto para realizar os Labs:
-- **Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS**
-- **Lab4: Desenvolvimento de uma tela utilizando o Oracle Visual Builder**
+- [**Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS**](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab3.md)
+- [**Lab4: Desenvolvimento de uma tela utilizando o Oracle Visual Builder**](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab4.md)

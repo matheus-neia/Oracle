@@ -11,10 +11,11 @@ Leia os Links abaixo:
 - Executar o Lab 1 e Lab 2
 - Ter acesso ao OIC Enterprise Edition
 - Ter acesso ao Oracle Mobile Hub
-- Instalar o app Oracle MAX no seu celular
+- Instalar o app Oracle MAX no seu celular - [Installing the MAX App](https://docs.oracle.com/en/cloud/paas/mobile-hub/build-low-code/building-and-testing-your-apps.html#GUID-60364DA2-2464-4C4F-ADB3-C845E1B6E591)
+- Ver o Vídeo [An Introduction to Mobile Application Accelerator (MAX)](https://docs.oracle.com/en/cloud/paas/mobile-hub/build-low-code/what-is-mobile-application-accelerator.html#GUID-CD0DA584-C21A-4FB3-A284-4EF75819B138)
 
 ### Passo 1
-**1.1** Faça o login da sua conta no Oracle Ingration Cloud, utilizado no Lab 1 e Lab 2.
+**1.1** Faça o login da sua conta no Oracle Ingration Cloud, conta utilizada no Lab 1 e Lab 2.
 
 ![image001.png](images/2/image001.png)
 
@@ -26,7 +27,7 @@ Leia os Links abaixo:
 
 ![image003.png](images/3/image003.png)
 
-**1.4** Copie a URL da aba **Exposed**, guarde esta url em um bloco de notas. No meu exemplo ficou algo assim `https://xxxxxxx.oraclecloud.com/soa-infra/services/oracleinternalpcs/CreateOpp_XX!1.0.0*xxxxxxxx/ProcessCreateOppOnSalesCloud.service?WSDL`
+**1.4** Copie a URL da aba **Exposed** Guarde esta url em um bloco de notas. No meu exemplo ficou algo assim `https://xxxxxxx.oraclecloud.com/soa-infra/services/oracleinternalpcs/CreateOpp_XX!1.0.0*xxxxxxxx/ProcessCreateOppOnSalesCloud.service?WSDL`
 
 ![image004.png](images/3/image004.png)
 
@@ -42,10 +43,11 @@ Leia os Links abaixo:
 
 ![image006.png](images/3/image006.png)
 
-**1.8** Preenche os campos:
+**1.8** Preencha os campos:
 - **API Display Name** como `CreateOPPConectorPCS_XX` onde XX é o número entregue pelo instrutor.
 - **WSDL URL** com a url que você guardou no passo 1.4. 
 - **Short Description** com uma descriçao escolhida por você. 
+
 Agora clique em **Create**. 
 
 ![image007.png](images/3/image007.png)
@@ -58,11 +60,12 @@ Na próxima tela confirme suas informações e clique em **>**.
 
 ![image009.png](images/3/image009.png)
 
-**1.10** Clique em **Add** e depois preencha os campos:
+**1.10** Na tela **Select or Create a New API Key** clique em **Add** e depois preencha os campos:
 - **Key Name** com `PCS_TTC_XX` onde XX é o número entregue pelo instrutor.
 - **Short Description** com `PCS_TTC_XX` onde XX é o número entregue pelo instrutor.
-- **User Name** com o usuário que você utiliza para conectar no Oracle Cloud
-- **Password** com a senha que você utiliza para conectar no Oracle Cloud
+- **User Name** com o usuário que você utiliza para conectar no Oracle Cloud.
+- **Password** com a senha que você utiliza para conectar no Oracle Cloud.
+
 Clique em **Save** e depois **Select**, vá para a próxima tela, tela de teste, clicando em **>**.
 
 ![image010.png](images/3/image010.png)
@@ -89,7 +92,7 @@ Clique em **Save** e depois **Select**, vá para a próxima tela, tela de teste,
 }
 ```
 
-Nos campos de autenticação escolha em **Backend** a opção de `bots_samples` e preencha com seu username e password que você utiliza para conectar no Oracle Cloud.
+Nos campos de autenticação escolha em **Backend** a opção de `bots_samples` e preencha com seu username e password que você utilizou para conectar no Oracle Cloud.
 
 ![image011.png](images/3/image011.png)
 
@@ -143,7 +146,7 @@ Clique em **Save**
 
 ![image019.png](images/3/image019.png)
 
-**2.6** Clique em **Implementation** e faça o download do arquivo de exemplo clicando no ícone **JavaScript Scaffold**.
+**2.6** Clique em **Implementation** e faça o download do arquivo de exemplo clicando no botão **JavaScript Scaffold**.
 
 ![image020.png](images/3/image020.png)
 
@@ -268,13 +271,15 @@ Publique a API conforme imagem abaixo:
 
 ![image035.png](images/3/image035.png)
 
+Clique em **Create**
+
 ![image036.png](images/3/image036.png)
 
-**3.3** Na tela inicial da aplicação, clique no ícone **Data** (1) -> **Applications Services +** (2). A tela que abrirá escolhe a API criada no passo 2.9., no meu caso é a `Create Opp API XX` (3) e por fim clique em **Select** (4).
+**3.3** Na tela inicial da aplicação, clique no ícone **Data** (1) -> **Applications Services +** (2). Na tela que abrirá escolha a API criada no passo 2.9, no meu caso é a `Create Opp API XX` (3) e por fim clique em **Select** (4).
 
 ![image037.png](images/3/image037.png)
 
-**3.4** Clique no ícone **Components**, arraste o component **Layout -> Form** para tela do celular.
+**3.4** Clique no ícone **Components**, arraste o component **Form** para tela do celular.
 
 ![image038.png](images/3/image038.png)
 
@@ -290,7 +295,7 @@ Selecione **Opportunity**
 
 ![image042.png](images/3/image042.png)
 
-Após clicar em Finish:
+Como ficará a tela após clicar em Finish:
 
 ![image043.png](images/3/image043.png)
 
@@ -326,7 +331,7 @@ Clique em **Save** conforme imagem:
 
 ![image054.png](images/3/image054.png)
 
-**3.11** Clique no ícone **Application Screens** -> **New Screen**
+**3.11** Vamos criar uma nova tela, esta tela será chamada após a criação da oportuniade, para indicar que a oportunidade foi criada com sucesso. Clique no ícone **Application Screens** -> **New Screen**
 
 ![image055.png](images/3/image055.png)
 
@@ -342,11 +347,11 @@ Clique em **Finish**
 
 ![image058.png](images/3/image058.png)
 
-**3.12** Nesta nova tela vamos colocar uma imagem de sucesso. Esta tela será chamada apóis a criação da oportuniadde. Para isso Arraste o componente **MEDIA -> Image** para a tela de *design*. 
+**3.12** Nesta nova tela vamos colocar uma imagem de sucesso. Esta tela será chamada apóis a criação da oportuniadde. Para isso arraste o componente **Image** para a tela de *design*. 
 
 ![image059.png](images/3/image059.png)
 
-Clique na aba **Data** e depois em **Upload a custom image** e selecione a imagem like-red.png que está na pasta files. 
+Clique na aba **Data** e depois em **Upload a custom image** e selecione a imagem [like-red.png](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/files/like-red.png) que está na pasta files. 
 
 ![image060.png](images/3/image060.png)
 

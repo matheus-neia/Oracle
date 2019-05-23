@@ -7,7 +7,6 @@
 - Passo 4: Efetuar o teste e deploy da aplicação VBCS
 
 ## Pré-Requisitos
-Leia os Links abaixo:
 - Executar o Lab 1 e Lab 2
 - Ter acesso ao OIC Enterprise Edition
 
@@ -42,13 +41,15 @@ e depois clique em **+ Web Application**, dê o nome de `Opportunity`
 
 ![image009.png](images/4/image009.png)
 
-Do lado direito da tela na aba **General** o campo **Label Hint** preencha com `Name`.
+Após adicionar o componentes. Do lado direito da tela vá até aba **General** e preencha o campo **Label Hint** com `Name`.
 
 ![image011.png](images/4/image011.png)
 
+Repita este procedimento para criar mais 5 campos.
+
 ![image012.png](images/4/image012.png)
 
-**1.7** Crie mais 5 campos dentro do **Form Layout**, para isso repita o 1.6 com os valores da tabela abaixo.
+**1.7** Para a criação dos 5 campos, eles devem ficar dentro do **Form Layout**, para isso repita o passo 1.6 com os valores da tabela abaixo.
 
 | Componente Field  | Label Hint  |
 | ------------ | ------------ |
@@ -68,7 +69,7 @@ Por último adicione um botão no final do formulário, arrastando o componente 
 ![image014.png](images/4/image014.png)
 
 **1.9** Agora vamos criar as variáveis para serem utilizadas nos campos que em
-criamos. Para isso siga os passos abaixo: - Cliquem em **Variables** (1) -
+criamos. Para isso siga os passos abaixo: 
 - Clique em **Variables** (1)
 - Clique em **+ Variable** (2)
 - Preencha em **ID** : `Opportunity` (3)
@@ -105,7 +106,6 @@ Faça o mesmo para o campo **Owner**
 ![image021.png](images/4/image021.png)
 
 Faça isso para os demais campos:
-- Owner
 - Product Name
 - Product Price
 - Product Quantity
@@ -125,7 +125,7 @@ Siga os cliques conforme imagem abaixo
 
 ![image024.png](images/4/image024.png)
 
-**2.2** Clique no **+** para adicionar o processo (1), desligue a opção de incluir testes (2), deixe o **Alias** como `ProcessCreateOpp` (3) e clique em **Add**. (4)
+**2.2** Clique no **+** para adicionar o processo (1), desligue a opção de incluir testes (2), preencha o campo **Alias** com `ProcessCreateOpp` (3) e clique em **Add**. (4)
 
 ![image026.png](images/4/image026.png)
 
@@ -168,7 +168,7 @@ Agora faça os demais mapeamentos dos campos
 
 ![image034.png](images/4/image034.png)
 
-**3.4** Crie mais uma ação chamada **Fire Action** e coloque as informações necessárias conforme imagem abaixo:
+**3.4** Crie mais uma ação chamada **Fire Action** e com as informações necessárias, conforme imagem abaixo:
 
 ![image035.png](images/4/image035.png)
 
@@ -187,7 +187,7 @@ Você deverá receber uma mensagem parecida como esta:
 
 ![image038.png](images/4/image038.png)
 
-**4.2** Vá até a o integration e pesquisa na **Monitoring** -> **Tracking** (Confome lab 1, passo 4.7) para ver se sua chamada fio feita com sucesso.
+**4.2** Vá até integration e pesquisa suas requisições em **Monitoring** -> **Tracking** (Confome [lab 1, passo 4.7](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab1.md#passo-4)) para ver se sua chamada fio feita com sucesso.
 
 ![image039.png](images/4/image039.png)
 
@@ -203,6 +203,6 @@ Depois clique em **Publish**
 
 Agora clique em **Live -> Opportunity** e faça os testes de sua aplicação
 
-![image042.png](images/4/image042.png)
+![image043.png](images/4/image043.png)
 
 Com o término deste passo você poderá observar todo o fluxo acontecendo, o VBCS chamando o Process Cloud que chama o Integration Cloud. Navegue por toda a ferramenta para aprender e visualizar tudo funcionando em uma única ferramenta.
