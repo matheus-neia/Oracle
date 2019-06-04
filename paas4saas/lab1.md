@@ -3,10 +3,9 @@
 - Passo 1: Criar um conector REST
 - Passo 2: Criar um conector para o Oracle Sales Cloud
 - Passo 3: Criar uma integração entre o conector rest e o conector Oracle Sales Cloud
-- Passo 4: Efetuar teste para criação de uma oportuniade
+- Passo 4: Efetuar teste para criação de uma oportunidade
 
 ## Pré-Requisitos
-Leia os Links abaixo:
 - Ter acesso ao OIC
 - Ter acesso ao Oracle Sales Cloud
 - Link dos serviços do Sales Cloud - [Veja como obter os links](https://docs.oracle.com/en/cloud/paas/integration-cloud/sales-adapter/prerequisites-creating-connection.html#GUID-8AF6BDD4-A711-480E-B71F-FAD062024A57)
@@ -80,7 +79,7 @@ Leia os Links abaixo:
 
 ![image013.png](images/1/image013.png "image013.png")
 
-**3.4** Configurando o adaptador rest
+**3.4** Configurando o adaptador REST
 
 **3.4.1** Preenche os campos conforme imagens abaixo:
 
@@ -129,9 +128,9 @@ Na tela *Summary*, confira se as configurações estão correstas em **Endpoint 
 
 ![image018.png](images/1/image018.png)
 
-**3.5** Na tela principal, busque no campo direito (1) pelo conexão `SalesCloudWorkshop_XX` (2), arraste ela até o campo *Drag and Drop a Invoke* (3).
+**3.5** Na tela principal, busque no campo direito (1), pela conexão `SalesCloudWorkshop_XX` (2), arraste ela até o campo *Drag and Drop a Invoke* (3).
 
-![image013.png](images/1/image019.png "image019.png")
+![image019.png](images/1/image019.png "image019.png")
 
 **3.6** Configurando o adaptador SalesCloud
 
@@ -144,7 +143,7 @@ Na tela *Summary*, confira se as configurações estão correstas em **Endpoint 
 
 | Passo  | Campo  | Valor  |
 | ------------ | ------------ | ------------ |
-| 1 |Browse By  | Business Objects  |
+| 1 | Browse By  | Business Objects  |
 | 2 | Select a Business Object  | Opportunity : OpportunityService  |
 | 3 | Select the Operation to Perform on the Business Object | createOpportunity |
 
@@ -156,7 +155,7 @@ e depois clique em **Next >**.
 
 ![image022.png](images/1/image022.png)
 
-**3.7** Configurando uma chamada para recuperar o ID do *Owner* da Oportunidade:
+**3.7** Configurando uma chamada para recuperar o ID do *Owner* da oportunidade:
 
 **3.7.1** Do lado direito da tela procure novamente pela conexão `SalesCloudWorkshop_XX` e arraste até o **+** no canto esquerdo, conforme indicado na figura abaixo:
 

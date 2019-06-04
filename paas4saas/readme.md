@@ -1,9 +1,12 @@
 # Visão Geral do *Workshop*
 ## Processo de negócio
-Muitas vezes precisamos colocar um processo de negócio, com regras específicas em nosso CRM ou outro aplicativa (SaaS ou On-Premises), para isso este workshop irá mostrar a criação de uma oportunidade no **Oracle Sales Cloud - OSC** utilizando o **Oracle Integration Cloud Service - OIC** para integrar este processo de negócio ao software Oracle Sales Cloud. 
-Após isso iremos criar um aplicativo Mobile, com a ajuda do **Oracle Mobile Cloud Service - MCS** e **Oracle MAX**, para rodar este novo processo de negócio criado. Além deste app iremos criar uma App Web utilizando o **Oracle Visual Builder**. 
+Muitas vezes em aplicações existentes tanto como SaaS quanto on-premises precisamos adicionar um processo de negócio com regras específicas ou incluir novas funcionalidades. Dentro de um CRM ou outro aplicativo (SaaS ou On-Premises), precisamos também criar uma aplicação móvel buscando informações deste aplicativo ou demais aplicativos.
 
-Para realizar esta tarefa de criar um processo de negócio iremos executar os Labs abaixo.
+Para a solução destes problemas este workshop fio gerado e irá mostrar a criação de uma oportunidade no **Oracle Sales Cloud (OSC)** utilizando o **Oracle Integration Cloud Service (OIC)** para integrar, criar um processo de negócio e aplicações móveis e web para software Oracle Sales Cloud.
+Iremos criar um aplicativo móvel, com a ajuda do **Oracle Mobile Cloud Service (MCS)** e **Oracle MAX**, para rodar este novo processo de negócio criado. 
+Além deste aplicativo iremos criar uma aplicação web utilizando o **Oracle Visual Builder**. 
+
+Para realizar estas tarefas iremos executar os laboratórios abaixo.
 
 
 ## Divisão do Workshop
@@ -14,12 +17,12 @@ Para realizar esta tarefa de criar um processo de negócio iremos executar os La
 
 ## Pré Requisitos
 Será necessário para realizar este Workshop:
-- Instância do Oracle Integration Cloud - OIC
-- Instância do Oracle Mobile Cloud Service - MCS
+- Instância do Oracle Integration Cloud (OIC)
+- Instância do Oracle Mobile Cloud Service (MCS)
 - Instância do Oracle Sales Cloud
 - Postman - [Download](https://www.getpostman.com/ "Download")
 - Sugestão em utilizar o navegador Chrome com o touchscreen desligado.  [Desligar o touchscreen no Windows 10](https://support.microsoft.com/en-us/help/4028019/windows-enable-and-disable-your-touchscreen-in-windows-10 "Desligar o touchscreen no Windows 10")
-- Utlizar o navegador na lingua inglesa.  - [Como mudar a língua no Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en "Como mudar a língua no Chrome")
+- Utilizar o navegador na lingua inglesa. - [Como mudar a língua no Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en "Como mudar a língua no Chrome")
 
 ## Atividades
 
