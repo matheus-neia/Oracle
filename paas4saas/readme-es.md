@@ -1,10 +1,13 @@
 # Visión general del *Workshop*
 ## Proceso de negocio
 
-Muchas Veces NECESITAMOS Poner ONU Proceso de Negocio, con reglas específicas en nuestro de CRM u Aplicación Otro (SaaS On-Local) para mostrar este ESO Workshop La Creación De Una Oportunidad en el **Oracle Sales Cloud - utilizando OSC** el **Oracle Integration Cloud Service - OIC** para integrar este proceso de negocio al software Oracle Sales Cloud.
-En el caso de que se produzca un cambio en las condiciones de trabajo, se debe tener en cuenta que, además de esta aplicación vamos a crear una App Web utilizando el **Oracle Visual Builder**.
+Muchas veces en aplicaciones existentes tanto como SaaS y on-Provence necesitamos agregar un proceso de negocio con reglas específicas o incluir nuevas funcionalidades. Dentro de un CRM u otra aplicación (SaaS o On-Premises), también necesitamos crear una aplicación móvil buscando información de esta aplicación u otras aplicaciones.
 
-Para realizar esta tarea de crear un proceso de negocio vamos a ejecutar los Labs abajo.
+Para solucionar estos problemas este taller de cable generado y mostrará la creación de una oportunidad en **Oracle Sales Cloud (OSC)** utilizando el **Oracle Integration Cloud Service (OIC)** para integrar, crear un proceso de negocio y aplicaciones móviles y web para software Oracle Sales Cloud.
+Vamos a crear una aplicación móvil, con la ayuda del **Oracle Mobile Cloud Service (MCS)** y **Oracle MAX**, para ejecutar este nuevo proceso de negocio creado.
+Además de esta aplicación vamos a crear una aplicación web utilizando el **Oracle Visual Builder**.
+
+Para realizar estas tareas realizaremos los laboratorios abajo.
 
 
 ## División del Workshop
@@ -44,7 +47,7 @@ Será necesario para realizar este Workshop:
 - Crear una aplicación utilizando Oracle MAX, esta aplicación llamará al proceso creado en Lab2 a través de la API creada en Oracle MCS
 
 #### Lab 4 - Desarrollo de una pantalla utilizando Oracle Visual Builder
-**Documentación**: [Lab4.md] (https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab4.md)
+**Documentación**: [Lab4.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab4.md)
 ##### Objetivos
 - Desarrollar una aplicación web con un formulario para la creación de una oportunidad.
 - Esta aplicación llamará al proceso de negocio creado en Lab2
