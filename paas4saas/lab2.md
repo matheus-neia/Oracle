@@ -18,11 +18,21 @@ Leia os Links abaixo:
 
 ![image001.png](images/2/image001.png)
 
-**1.2** Vá na opção **Processes** -> **Process Applications** -> **Create** -> **Import a Application**
+**1.2** Vá na opção **Processes** -> **Decision Models** -> **Create** -> **Import a Decision Model**
+
+![image001.png](images/2/image001_1.png)
+
+**1.3** Selecione o arquivo `Decision Opp by Price.dmn` e selecione as opções **Activate the model** e **Open Immediately**. O nome do `Decision Model` deverá ficar como **Decision Opp by Price**
+
+![image001.png](images/2/image001_2.png)
+
+**1.3** Vá na opção **Processes** -> **Process Applications** -> **Create** -> **Import a Application**
 
 ![image002.png](images/2/image002.png)
 
-**1.3** Faça o upload do arquivo [CreateOpp.exp](files/CreateOpp.exp) no campo **Name** preencha `CreateOpp_XX` (Onde XX será entregue pelo instrutor).
+**1.4** Agora vá na opção **Processes** -> **Process Applications** -> **Create** -> **Import a Application**
+
+**1.5** Faça o upload do arquivo [CreateOpp.exp](files/CreateOpp.exp) no campo **Name** preencha `CreateOpp_XX` (Onde XX será entregue pelo instrutor).
 
 ![image003.png](images/2/image003.png)
 
