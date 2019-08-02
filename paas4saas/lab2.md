@@ -22,7 +22,7 @@ Leia os Links abaixo:
 
 ![image001.png](images/2/image001_1.png)
 
-**1.3** Selecione o arquivo `Decision Opp by Price.dmn` e selecione as opções **Activate the model** e **Open Immediately**. O nome do `Decision Model` deverá ficar como **Decision Opp by Price**
+**1.3** Selecione o arquivo [Decision Opp by Price.dmn](files/Decision%20Opp%20by%20Price.dmn) e selecione as opções **Activate the model** e **Open Immediately**. O nome do `Decision Model` deverá ficar como **Decision Opp by Price**
 
 ![image001.png](images/2/image001_2.png)
 
