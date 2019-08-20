@@ -51,11 +51,11 @@
 
 **2.1.1** Llenado de Servicios **OSC Services Catalog WSDL URL**  con la información que recogió el elemento de enlace de los servicios en la nube de ventas o utilizar esto: `https://testingapplication.com/fscmService/ServiceCatalogService?WSDL` y reemplazar testingapplication.com para su dominio entorno Oracle Sales Cloud - OSC.
 
-**2.1.2** Rellenar **Interface Catalog URL (optional)** con la información que recogió el elemento de enlace de los servicios en la nube de ventas o utilizar esto: https://testingapplication.com/helpPortalApi/otherResources/latest/interfaceCatalogs y reemplazar el testingapplication.com dominio de su entorno Oracle Sales Cloud - OSC.
+**2.1.2** Rellenar **Interface Catalog URL (optional)** con la información que recogió el elemento de enlace de los servicios en la nube de ventas o utilizar esto: `https://testingapplication.com/helpPortalApi/otherResources/latest/interfaceCatalogs` y reemplazar el testingapplication.com dominio de su entorno Oracle Sales Cloud - OSC.
 
 ![image008.png](images/1/image008.png)
 
-**2.1.3** En la sección **Security**, haga clic en **Configure Security** y rellenar el nombre de usuario y contraseña de un usuario OSC. Haga clic en OK
+**2.1.3** En la sección **Security**, haga clic en **Configure Security** y rellenar el nombre de usuario y contraseña de un usuario OSC. Haga clic en **OK**
 
 ![image009.png](images/1/image009.png "image009.png")
 
@@ -124,7 +124,7 @@ Ahora el campo **Select the request payload format** seleccionar **JSON Sample**
 
 ![image017_1.png](images/1/image017_1.png)
 
-En la pantalla *Summary*, compruebe que los ajustes están correstas en**Endpoint Summary**, y luego haga clic en **Done**
+En la pantalla *Summary*, compruebe que los ajustes están correstas en **Endpoint Summary**, y luego haga clic en **Done**
 
 ![image018.png](images/1/image018.png)
 
