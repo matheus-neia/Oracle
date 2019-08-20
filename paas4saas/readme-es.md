@@ -27,7 +27,7 @@ Será necesario para realizar este Workshop:
 
 ## Actividades
 
-#### Lab 1 - Desarrollo de la Integración entre Oracle OIC y Oracle Sales Cloud **Documentación**: [Lab1.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab1.md)
+#### Lab 1 - Desarrollo de la Integración entre Oracle OIC y Oracle Sales Cloud **Documentación**: [Lab1.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab1-es.md)
 ##### Objetivos
 - Crear un conector REST
 - Crear un conector para Oracle Sales Cloud
