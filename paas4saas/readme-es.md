@@ -34,20 +34,20 @@ Será necesario para realizar este Workshop:
 - Crear una integración entre el conector de tecnología restante y el conector de Oracle Sales Cloud
 
 #### Lab 2 - Desarrollo de un proceso de negocio utilizando Process Cloud Service - OIC e integrando con Oracle Sales Cloud
-**Documentación**: [Lab2.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab2.md)
+**Documentación**: [Lab2.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab2-es.md)
 ##### Objetivos
 - Desarrollar un proceso de negocio que valida si el valor de la oportunidad es mayor que 5000 USD el gerente deberá aprobar su creación
 - Componer el proceso de negocio con la integración creada en el Laboratorio 1.
 
 #### Lab 3 - Desarrollo de una pantalla móvil utilizando Oracle Mobile Cloud Service - MCS
-**Documentación**: [Lab3.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab3.md)
+**Documentación**: [Lab3.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab3-es.md)
 ##### Objetivos
 - Crear un conector en Oracle MCS, este conector apuntar al proceso creado en Lab2.
 - Crear una API en Oracle MCS apuntando al conector creado.
 - Crear una aplicación utilizando Oracle MAX, esta aplicación llamará al proceso creado en Lab2 a través de la API creada en Oracle MCS
 
 #### Lab 4 - Desarrollo de una pantalla utilizando Oracle Visual Builder
-**Documentación**: [Lab4.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab4.md)
+**Documentación**: [Lab4.md](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab4-es.md)
 ##### Objetivos
 - Desarrollar una aplicación web con un formulario para la creación de una oportunidad.
 - Esta aplicación llamará al proceso de negocio creado en Lab2
