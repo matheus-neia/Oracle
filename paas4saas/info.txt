@@ -1,0 +1,63 @@
+Link Github:
+https://github.com/matheus-neia/Oracle/tree/master/paas4saas
+
+Links Oracle Cloud
+
+	OMH: https://omh5-acteambr.mobile.ocp.oraclecloud.com/mobileui/home
+	OIC: https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com/ic/home/
+	User Oracle Cloud: 
+		oic.user1 - oic.user35
+	Password: Workshop2019
+
+
+Links Oracle Sales Cloud:
+
+	Service Catalog:
+	https://adc3-zgxu-fa-ext.oracledemos.com/fscmService/ServiceCatalogService?WSDL
+	
+	Interface Catalog:
+	https://adc3-zgxu-fa-ext.oracledemos.com/helpPortalApi/otherResources/latest/interfaceCatalogs
+
+
+	User Oracle Sales Cloud: bala.gupta
+	Password: wvK59444
+
+
+
+Documentação Oracle Cloud
+https://docs.oracle.com/en/cloud/
+https://docs.oracle.com/en/cloud/paas/integration-cloud/index.html
+
+Link para Treinamentos
+https://apexapps.oracle.com/pls/apex/f?p=44785:49:104469518875564::NO:::
+
+Oracle Cloud Marketplace
+https://cloudmarketplace.oracle.com/marketplace/en_US/homePage.jspx
+
+Integração com EBS:
+https://demo.oracle.com/apex/f?p=GO:PAGE:0:DSD:NO:1:ID:49252
+https://demo.oracle.com/apex/f?p=GO:PAGE:0:DSD:NO:1:ID:47493
+https://www.youtube.com/watch?v=Uor4QyZa1wM
+
+Error Handling
+http://www.ateam-oracle.com/oic-error-handling-guide
+
+https://blogs.oracle.com/integration/enabling-the-future-today-feature-flags-in-oracle-integration-cloud
+
+Integration Certification
+https://education.oracle.com/product/pexam_1Z0-1042
+
+Create Extension on Oracle SaaS:
+https://docs.oracle.com/en/cloud/saas/engagement/19c/oacex/extend-simplified-pages.html
+https://www.youtube.com/watch?v=e5R4bXHdBM8
+
+
+http://www.ateam-oracle.com/fusion-saas-finding-the-view-object-you-need-for-data-extracts
+
+Documentation Opportunity Service
+https://docs.oracle.com/en/cloud/saas/sales/r13-update17d/oesws/Opportunity-Opportunity-svcDataObj-249.html
+
+
+Business Events:
+https://blogs.oracle.com/imc/subscribe-to-business-events-in-fusion-based-saas-applications-from-oracle-integration-cloud-oic-part-1-prerequisites
+https://blogs.oracle.com/fmw/oracle-integration-cloud-oic-fusion-applications-security-requirements
