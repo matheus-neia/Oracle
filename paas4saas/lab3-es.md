@@ -1,9 +1,9 @@
-# Lab 3 - Desarrollo de uEn la pantalla móvil utilizando Oracle Mobile Cloud Service - MCS
+# Lab 3 - Desarrollo de una pantalla móvil utilizando Oracle Mobile Cloud Service - MCS
 
 ## Objetivos
 - Paso 1: Crear un conector con el Process Cloud
-- Paso 2: Desarrollar uEn la API Rest usando Javascript, para llamar el conector
-- Paso 3: Crear uEn la aplicación Mobile - Oracle MAX
+- Paso 2: Desarrollar una API Rest usando Javascript, para llamar el conector
+- Paso 3: Crear una aplicación Mobile - Oracle MAX
 - Paso 4: Hacer deploy y prueba de la App
 
 ## Pré-Requisitos
