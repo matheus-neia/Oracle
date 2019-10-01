@@ -211,5 +211,5 @@ As duas chamadas do processo, chamaram o Integration que realizou a operação d
 ![image040.png](images/2/image040.png)
 
 Agora você está pronto para realizar os Labs:
-- [**Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS**](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab3.md)
+- [**Lab3: Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Hub - OMH**](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab3.md)
 - [**Lab4: Desenvolvimento de uma tela utilizando o Oracle Visual Builder**](https://github.com/matheus-neia/Oracle/blob/master/paas4saas/lab4.md)
