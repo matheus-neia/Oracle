@@ -1,8 +1,9 @@
 const request = require('request');
 var sleep = require('system-sleep');
-const baseUrl = 'https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com';
-const login = 'matheus.neia@oracle.com'
-const pass = 'Mmn0120Bov@0'
+const config_data = require('./config.json');
+const baseUrl = config_data.url;
+const login = config_data.login;
+const pass = config_data.password;
 
 getSpaces();
 
@@ -123,7 +124,7 @@ function olddeleteProjectsInSpace(idSpace, nameSpace) {
 	  		console.log('There is no result on URL ' + optionsRequest.url);
 	  	}
 	  } 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }
 
 function olddeleteProject(idSpace, idProject, nameProject) {
@@ -141,7 +142,7 @@ function olddeleteProject(idSpace, idProject, nameProject) {
 		console.log('statusCode to delete project: ', response && response.statusCode);
 		console.log('Project Deleted: ' + idProject + ' - ' + nameProject);
 	  } 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 
 }
 
@@ -168,7 +169,7 @@ function olddeleteSpaces() {
 	  		console.log('There is no result on URL ' + optionsRequest.url);
 	  	}
 	  } 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 	
 }
 
@@ -189,7 +190,7 @@ function deleteSpace(idSpace) {
 			//console.log(response.headers);
 			console.log(response.body);
 		}
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }
 
 function undeployProjects (idProject) {

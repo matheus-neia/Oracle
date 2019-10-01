@@ -1,8 +1,9 @@
 const request = require('request');
 var sleep = require('system-sleep');
-const baseUrl = 'https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com';
-const login = 'matheus.neia@oracle.com'
-const pass = 'Mmn0120Bov@0'
+const config_data = require('./config.json');
+const baseUrl = config_data.url;
+const login = config_data.login;
+const pass = config_data.password;
 
 getSpaces();
 
@@ -94,5 +95,5 @@ function deleteAllDecisionModels(spaceID, username) {
 				console.error('There is no token for user ', username);
 			}
 		}
-	}).auth(username, 'Workshop2019');
+	}).auth(username, config_data.users);
 }

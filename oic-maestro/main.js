@@ -52,7 +52,7 @@ function main() {
 	  	}
 	  } 
 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }
 
 function deactivateIntegration(idIntegration, nameIntegration) {
@@ -73,7 +73,7 @@ function deactivateIntegration(idIntegration, nameIntegration) {
 	  } else {
 	  	console.log('Integration ' + nameIntegration + ' deactivated! Response: ' + response.statusCode);
 	  } 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }
 
 
@@ -93,5 +93,5 @@ function deleteIntegration(idIntegration, nameIntegration) {
 	  } else {
 	  	console.log('Integration ' + nameIntegration + ' deleted! Response: ' + response.statusCode);
 	  } 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }

@@ -1,5 +1,6 @@
 const request = require('request');
-const baseUrl = 'https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com';
+const config_data = require('./config.json');
+const baseUrl = config_data.url
 
 main();
 
@@ -27,7 +28,7 @@ function main() {
 	  	}
 	  } 
 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }
 
 
@@ -44,5 +45,5 @@ function deleteConnection(idConnection, nameConnection) {
 	  } else {
 	  	console.log('Connection ' + nameConnection + ' deleted! Response: ' + response.statusCode);
 	  } 
-	}).auth('matheus.neia@oracle.com', 'Mmn0120Bov@0', false);
+	}).auth(config_data.login, config_data.password, false);
 }
