@@ -1,5 +1,5 @@
 const request = require('request');
-const baseUrl = 'https://paas4saas-brasil-acteambr.integration.ocp.oraclecloud.com';
+const baseUrl = 'https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com';
 
 main();
 
@@ -24,7 +24,7 @@ function main() {
 		  	for (var i = 0, len = itens.length; i < len; i++) {
 	  			deactivateIntegration(itens[i].id, itens[i].name);
 			}
-			console.log('Deactivated all integrations');
+			console.log('Called all integrations to deactivaded ' + itens.length);
 	  	} else {
 	  		console.log('There is no result on URL' + optionsRequest.url);
 	  	}

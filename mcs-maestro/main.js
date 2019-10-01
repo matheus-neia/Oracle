@@ -18,15 +18,13 @@ app.use(function(req, res, next){
 
 //app.listen(9090, function(){ console.log('Servidor Web rodando na porta 9090, para continuar acesse o link https://imasters.com.br/back-end/api-http-rest-conceito-e-exemplo-em-node-js') });
 
-var baseUrl = 'https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com';
+var baseUrl = 'https://paas4saas-brasil-acteambr.integration.ocp.oraclecloud.com';
 
 main();
 
 function main() {
 	var optionsRequest = {
-		//url: baseUrl + '/ic/api/integration/v1/integrations?q={status : \'ACTIVATED\'}',
-		//url: baseUrl + '/ic/api/integration/v1/integrations?q={status : \'CONFIGURED\', \'INPROGRESS\', \'FAILEDACTIVATION\'}',
-		url: baseUrl + '/ic/api/integration/v1/integrations',
+		url: baseUrl + '/ic/api/integration/v1/integrations?q={status : \'ACTIVATED\'}',
 		headers: {
 	    'Accept': 'application/json'
 	  	}
@@ -48,7 +46,7 @@ function main() {
 			}
 			console.log('Deactivated all integrations');
 	  	} else {
-	  		console.log('There is no result on URL ' + optionsRequest.url);
+	  		console.log('There is no result on URL' + optionsRequest.url);
 	  	}
 	  } 
 

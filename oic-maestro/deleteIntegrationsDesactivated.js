@@ -1,11 +1,12 @@
 const request = require('request');
-const baseUrl = 'https://paas4saas-brasil-acteambr.integration.ocp.oraclecloud.com';
+const baseUrl = 'https://paas4saas-lad2-acteambr.integration.ocp.oraclecloud.com';
 
 main();
 
 function main() {
 	var optionsRequest = {
-		url: baseUrl + '/ic/api/integration/v1/integrations?q={status : \'INPROGRESS\' AND \'CONFIGURED\'}',
+		url: baseUrl + '/ic/api/integration/v1/integrations?q={status : \'CONFIGURED\'}',
+		//url: baseUrl + '/ic/api/integration/v1/integrations?q={status : \'CONFIGURED\', \'INPROGRESS\', \'FAILEDACTIVATION\'}',
 		headers: {
 	    'Accept': 'application/json'
 	  	}
@@ -18,15 +19,15 @@ function main() {
 	  } else {
 	  	console.log('statusCode: ', response && response.statusCode);
 	  	var integrations = JSON.parse(body);
-	  	console.log('Existem ' + integrations.totalResults + ' integracoes');
 	  	if (integrations.totalResults > 0) {
+			console.log('Existem ' + integrations.totalResults + ' integracoes');
 	  		var itens = integrations.items;
 		  	for (var i = 0, len = itens.length; i < len; i++) {
 	  			deleteIntegration(itens[i].id, itens[i].name);
 			}
-			console.log('Deactivated all integrations');
+			console.log('Called to delete all integrations ' + itens.length);
 	  	} else {
-	  		console.log('There is no result on URL' + optionsRequest.url);
+	  		console.log('There is no result on URL ' + optionsRequest.url);
 	  	}
 	  } 
 
