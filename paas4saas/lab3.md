@@ -1,4 +1,4 @@
-# Lab 3 - Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Cloud Service - MCS
+# Lab 3 - Desenvolvimento de uma tela Mobile utilizando Oracle Mobile Hub - OMH
 
 ## Objetivos
 - Passo 1: Criar um conector conector com o Process Cloud
