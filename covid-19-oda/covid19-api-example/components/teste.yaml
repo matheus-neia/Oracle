@@ -1,0 +1,221 @@
+metadata:
+  platformVersion: "1.0"
+main: true
+name: "FinancialBotMainFlow"
+context:
+  variables:
+    accountType: "AccountType"
+    txnType: "TransactionType"
+    txnSelector: "TransactionSelector"
+    toAccount: "ToAccount"
+    spendingCategory: "TrackSpendingCategory"
+    paymentAmount: "CURRENCY"
+    iResult: "nlpresult"
+    iResult2: "nlpresult"
+    transaction: "string"
+    dispute: "string"
+    amount: "string"
+    merchant: "string"
+    date: "string"
+    description: "string"
+states:
+  intent:
+    component: "System.Intent"
+    properties:
+      variable: "iResult"
+    transitions:
+      actions:
+        Balances: "startBalances"
+        Transactions: "startTxns"
+        Send Money: "startPayments"
+        Track Spending: "startTrackSpending"
+        Dispute: "setDate"
+        unresolvedIntent: "unresolved"
+  startBalances:
+    component: "System.SetVariable"
+    properties:
+      variable: "accountType"
+      value: "${iResult.value.entityMatches['AccountType'][0]}"
+    transitions: {}
+  askBalancesAccountType:
+    component: "System.List"
+    properties:
+      options: "${accountType.type.enumValues}"
+      prompt: "For which account do you want your balance?"
+      variable: "accountType"
+    transitions: {}
+  printBalance:
+    component: "BalanceRetrieval"
+    properties:
+      accountType: "${accountType.value}"
+    transitions:
+      return: "printBalance"
+  startTxns:
+    component: "System.SetVariable"
+    properties:
+      variable: "accountType"
+      value: "${iResult.value.entityMatches['AccountType'][0]}"
+    transitions: {}
+  resolveTxnType:
+    component: "System.SetVariable"
+    properties:
+      variable: "txnType"
+      value: "${iResult.value.entityMatches['TransactionType'][0]}"
+    transitions: {}
+  resolveTxnSelector:
+    component: "System.SetVariable"
+    properties:
+      variable: "txnSelector"
+      value: "${iResult.value.entityMatches['TransactionSelector'][0]}"
+    transitions: {}
+  askTxnsAccountType:
+    component: "System.List"
+    properties:
+      options: "${accountType.type.enumValues}"
+      prompt: "For which account do you want to see transactions?"
+      variable: "accountType"
+    transitions: {}
+  askTxnType:
+    component: "System.List"
+    properties:
+      options: "${txnType.type.enumValues}"
+      prompt: "What type of transactions do you want to see?"
+      variable: "txnType"
+    transitions: {}
+  printTxns:
+    component: "TransactionsRetrieval"
+    properties:
+      accountType: "${accountType.value}"
+      txnType: "${txnType.value}"
+      txnSelector: "${txnSelector.value}"
+      nlpVariable: "iResult"
+    transitions:
+      return: "printTxns"
+  startPayments:
+    component: "System.SetVariable"
+    properties:
+      variable: "accountType"
+      value: "${iResult.value.entityMatches['AccountType'][0]}"
+    transitions: {}
+  resolveToAccount:
+    component: "System.SetVariable"
+    properties:
+      variable: "toAccount"
+      value: "${iResult.value.entityMatches['ToAccount'][0]}"
+    transitions: {}
+  resolvePaymentAmount:
+    component: "System.SetVariable"
+    properties:
+      variable: "paymentAmount"
+      value: "${iResult.value.entityMatches['CURRENCY'][0]}"
+    transitions: {}
+  askFromAccountType:
+    component: "System.List"
+    properties:
+      options: "${accountType.type.enumValues}"
+      prompt: "From which account do you want to make a payment?"
+      variable: "accountType"
+    transitions: {}
+  askToAccount:
+    component: "System.List"
+    properties:
+      options: "${toAccount.type.enumValues}"
+      prompt: "To which account do you want to make a payment?"
+      variable: "toAccount"
+    transitions: {}
+  askPaymentAmount:
+    component: "System.Text"
+    properties:
+      prompt: "What's the payment amount?"
+      variable: "paymentAmount"
+      maxPrompts: 1
+    transitions:
+      actions:
+        cancel: "intentCheck"
+  doPayment:
+    component: "Payments"
+    properties:
+      fromAccountType: "${accountType.value}"
+      toAccount: "${toAccount.value}"
+      amount: "${paymentAmount.value.totalCurrency}"
+    transitions:
+      return: "doPayment"
+  intentCheck:
+    component: "System.Intent"
+    properties:
+      variable: "iResult2"
+    transitions:
+      actions:
+        Balances: "startBalances2"
+        unresolvedIntent: "askPaymentAmount2"
+  startBalances2:
+    component: "BalanceRetrieval"
+    properties:
+      accountType: "${accountType.value}"
+    transitions: {}
+  askPaymentAmount2:
+    component: "System.Text"
+    properties:
+      prompt: "What's the payment amount?"
+      variable: "paymentAmount"
+    transitions:
+      next: "doPayment"
+  startTrackSpending:
+    component: "System.SetVariable"
+    properties:
+      variable: "spendingCategory"
+      value: "${iResult.value.entityMatches['TrackSpendingCategory'][0]}"
+    transitions: {}
+  showSpending:
+    component: "TrackSpending"
+    properties:
+      spendingCategory: "${spendingCategory.value}"
+      date: "${iResult.value.entityMatches['DATE'][0]}"
+      durationStart: "${iResult.value.entityMatches['DURATION'][0].startDate}"
+      durationEnd: "${iResult.value.entityMatches['DURATION'][0].endDate}"
+    transitions:
+      return: "showSpending"
+  setDate:
+    component: "System.SetVariable"
+    properties:
+      variable: "date"
+      value: "2017-10-25T11:34:31Z"
+    transitions: {}
+  setAmount:
+    component: "System.SetVariable"
+    properties:
+      variable: "amount"
+      value: "$60"
+    transitions: {}
+  setMerchant:
+    component: "System.SetVariable"
+    properties:
+      variable: "merchant"
+      value: "PizzaUGotcha"
+    transitions: {}
+  setDescription:
+    component: "System.SetVariable"
+    properties:
+      variable: "description"
+      value: "restaurants"
+    transitions: {}
+  startDispute:
+    component: "System.Interactive"
+    properties:
+      sourceVariableList: "date, merchant, amount, description"
+      variable: "dispute"
+      id: "Bank_Transaction_Interactive_With_Verify"
+    transitions: {}
+  instantAppOutput:
+    component: "System.Output"
+    properties:
+      text: "Successfully filed dispute, your reference number is '${dispute.value.disputeID}'\
+        \ and reason is '${dispute.value.reason}'"
+    transitions:
+      return: "instantAppOutput"
+  unresolved:
+    component: "System.Output"
+    properties:
+      text: "Sorry I don't understand that question!"
+    transitions:
+      return: "unresolved"

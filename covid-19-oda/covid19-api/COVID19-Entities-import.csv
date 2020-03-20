@@ -1,0 +1,250 @@
+entity,value,synonyms
+Pais,BRA,Brazil:Brasil
+Pais,ABW,Aruba
+Pais,AFG,Afghanistan
+Pais,AGO,Angola
+Pais,AIA,Anguilla
+Pais,ALA,Åland Islands
+Pais,ALB,Albania
+Pais,AND,Andorra
+Pais,ARE,United Arab Emirates
+Pais,ARG,Argentina
+Pais,ARM,Armenia
+Pais,ASM,American Samoa
+Pais,ATA,Antarctica
+Pais,ATF,French Southern Territories
+Pais,ATG,Antigua and Barbuda
+Pais,AUS,Australia
+Pais,AUT,Austria
+Pais,AZE,Azerbaijan
+Pais,BDI,Burundi
+Pais,BEL,Belgium
+Pais,BEN,Benin
+Pais,BES,Bonaire
+Pais,BFA,Burkina Faso
+Pais,BGD,Bangladesh
+Pais,BGR,Bulgaria
+Pais,BHR,Bahrain
+Pais,BHS,Bahamas
+Pais,BIH,Bosnia and Herzegovina
+Pais,BLM,Saint Barthélemy
+Pais,BLR,Belarus
+Pais,BLZ,Belize
+Pais,BMU,Bermuda
+Pais,BOL,Bolivia (Plurinational State of)
+Pais,BRB,Barbados
+Pais,BRN,Brunei Darussalam
+Pais,BTN,Bhutan
+Pais,BVT,Bouvet Island
+Pais,BWA,Botswana
+Pais,CAF,Central African Republic
+Pais,CAN,Canada
+Pais,CCK,Cocos (Keeling) Islands
+Pais,CHE,Switzerland
+Pais,CHL,Chile
+Pais,CHN,China
+Pais,CIV,Côte d'Ivoire
+Pais,CMR,Cameroon
+Pais,COD,Congo
+Pais,COG,Congo
+Pais,COK,Cook Islands
+Pais,COL,Colombia
+Pais,COM,Comoros
+Pais,CPV,Cabo Verde
+Pais,CRI,Costa Rica
+Pais,CUB,Cuba
+Pais,CUW,Curaçao
+Pais,CXR,Christmas Island
+Pais,CYM,Cayman Islands
+Pais,CYP,Cyprus
+Pais,CZE,Czechia
+Pais,DEU,Germany
+Pais,DJI,Djibouti
+Pais,DMA,Dominica
+Pais,DNK,Denmark
+Pais,DOM,Dominican Republic
+Pais,DZA,Algeria
+Pais,ECU,Ecuador
+Pais,EGY,Egypt
+Pais,ERI,Eritrea
+Pais,ESH,Western Sahara
+Pais,ESP,Spain
+Pais,EST,Estonia
+Pais,ETH,Ethiopia
+Pais,FIN,Finland
+Pais,FJI,Fiji
+Pais,FLK,Falkland Islands (Malvinas)
+Pais,FRA,France
+Pais,FRO,Faroe Islands
+Pais,FSM,Micronesia (Federated States of)
+Pais,GAB,Gabon
+Pais,GBR,United Kingdom of Great Britain and Northern Ireland
+Pais,GEO,Georgia
+Pais,GGY,Guernsey
+Pais,GHA,Ghana
+Pais,GIB,Gibraltar
+Pais,GIN,Guinea
+Pais,GLP,Guadeloupe
+Pais,GMB,Gambia
+Pais,GNB,Guinea-Bissau
+Pais,GNQ,Equatorial Guinea
+Pais,GRC,Greece
+Pais,GRD,Grenada
+Pais,GRL,Greenland
+Pais,GTM,Guatemala
+Pais,GUF,French Guiana
+Pais,GUM,Guam
+Pais,GUY,Guyana
+Pais,HKG,Hong Kong
+Pais,HMD,Heard Island and McDonald Islands
+Pais,HND,Honduras
+Pais,HRV,Croatia
+Pais,HTI,Haiti
+Pais,HUN,Hungary
+Pais,IDN,Indonesia
+Pais,IMN,Isle of Man
+Pais,IND,India
+Pais,IOT,British Indian Ocean Territory
+Pais,IRL,Ireland
+Pais,IRN,Iran (Islamic Republic of)
+Pais,IRQ,Iraq
+Pais,ISL,Iceland
+Pais,ISR,Israel
+Pais,ITA,Italy
+Pais,JAM,Jamaica
+Pais,JEY,Jersey
+Pais,JOR,Jordan
+Pais,JPN,Japan
+Pais,KAZ,Kazakhstan
+Pais,KEN,Kenya
+Pais,KGZ,Kyrgyzstan
+Pais,KHM,Cambodia
+Pais,KIR,Kiribati
+Pais,KNA,Saint Kitts and Nevis
+Pais,KOR,Korea
+Pais,KWT,Kuwait
+Pais,LAO,Lao People's Democratic Republic
+Pais,LBN,Lebanon
+Pais,LBR,Liberia
+Pais,LBY,Libya
+Pais,LCA,Saint Lucia
+Pais,LIE,Liechtenstein
+Pais,LKA,Sri Lanka
+Pais,LSO,Lesotho
+Pais,LTU,Lithuania
+Pais,LUX,Luxembourg
+Pais,LVA,Latvia
+Pais,MAC,Macao
+Pais,MAF,Saint Martin (French part)
+Pais,MAR,Morocco
+Pais,MCO,Monaco
+Pais,MDA, Republic of Moldova
+Pais,MDG,Madagascar
+Pais,MDV,Maldives
+Pais,MEX,Mexico
+Pais,MHL,Marshall Islands
+Pais,MKD,North Macedonia
+Pais,MLI,Mali
+Pais,MLT,Malta
+Pais,MMR,Myanmar
+Pais,MNE,Montenegro
+Pais,MNG,Mongolia
+Pais,MNP,Northern Mariana Islands
+Pais,MOZ,Mozambique
+Pais,MRT,Mauritania
+Pais,MSR,Montserrat
+Pais,MTQ,Martinique
+Pais,MUS,Mauritius
+Pais,MWI,Malawi
+Pais,MYS,Malaysia
+Pais,MYT,Mayotte
+Pais,NAM,Namibia
+Pais,NCL,New Caledonia
+Pais,NER,Niger
+Pais,NFK,Norfolk Island
+Pais,NGA,Nigeria
+Pais,NIC,Nicaragua
+Pais,NIU,Niue
+Pais,NLD,Netherlands
+Pais,NOR,Norway
+Pais,NPL,Nepal
+Pais,NRU,Nauru
+Pais,NZL,New Zealand
+Pais,OMN,Oman
+Pais,PAK,Pakistan
+Pais,PAN,Panama
+Pais,PCN,Pitcairn
+Pais,PER,Peru
+Pais,PHL,Philippines
+Pais,PLW,Palau
+Pais,PNG,Papua New Guinea
+Pais,POL,Poland
+Pais,PRI,Puerto Rico
+Pais,PRK,Korea (Democratic People's Republic of)
+Pais,PRT,Portugal
+Pais,PRY,Paraguay
+Pais,PSE,Palestine
+Pais,PYF,French Polynesia
+Pais,QAT,Qatar
+Pais,REU,Réunion
+Pais,ROU,Romania
+Pais,RUS,Russian Federation
+Pais,RWA,Rwanda
+Pais,SAU,Saudi Arabia
+Pais,SDN,Sudan
+Pais,SEN,Senegal
+Pais,SGP,Singapore
+Pais,SGS,South Georgia and the South Sandwich Islands
+Pais,SHN,Saint Helena
+Pais,SJM,Svalbard and Jan Mayen
+Pais,SLB,Solomon Islands
+Pais,SLE,Sierra Leone
+Pais,SLV,El Salvador
+Pais,SMR,San Marino
+Pais,SOM,Somalia
+Pais,SPM,Saint Pierre and Miquelon
+Pais,SRB,Serbia
+Pais,SSD,South Sudan
+Pais,STP,Sao Tome and Principe
+Pais,SUR,Suriname
+Pais,SVK,Slovakia
+Pais,SVN,Slovenia
+Pais,SWE,Sweden
+Pais,SWZ,Eswatini
+Pais,SXM,Sint Maarten (Dutch part)
+Pais,SYC,Seychelles
+Pais,SYR,Syrian Arab Republic
+Pais,TCA,Turks and Caicos Islands
+Pais,TCD,Chad
+Pais,TGO,Togo
+Pais,THA,Thailand
+Pais,TJK,Tajikistan
+Pais,TKL,Tokelau
+Pais,TKM,Turkmenistan
+Pais,TLS,Timor-Leste
+Pais,TON,Tonga
+Pais,TTO,Trinidad and Tobago
+Pais,TUN,Tunisia
+Pais,TUR,Turkey
+Pais,TUV,Tuvalu
+Pais,TWN,Taiwan
+Pais,TZA,Tanzania
+Pais,UGA,Uganda
+Pais,UKR,Ukraine
+Pais,UMI,United States Minor Outlying Islands
+Pais,URY,Uruguay
+Pais,USA,United States of America:Estados Unidos:EUA
+Pais,UZB,Uzbekistan
+Pais,VAT,Holy See
+Pais,VCT,Saint Vincent and the Grenadines
+Pais,VEN,Venezuela (Bolivarian Republic of)
+Pais,VGB,Virgin Islands (British)
+Pais,VIR,Virgin Islands (U.S.)
+Pais,VNM,Viet Nam
+Pais,VUT,Vanuatu
+Pais,WLF,Wallis and Futuna
+Pais,WSM,Samoa
+Pais,YEM,Yemen
+Pais,ZAF,South Africa
+Pais,ZMB,Zambia
+Pais,ZWE,Zimbabwe

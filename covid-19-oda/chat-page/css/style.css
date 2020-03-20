@@ -1,0 +1,22 @@
+.wrapper {
+    background-color: #F0E1C2;
+     font-family: Georgia, Times, serif;
+}
+ .header, .footer {
+    text-align: center;
+     color: #A6191E;
+     padding: 30px;
+     font-family: Arial, Helvetica, sans-serif;
+     clear: both;
+}
+ .content {
+     border: 2px solid;
+     border-color: #2C5967;
+     color: #2C5967;
+     padding: 40px;
+     margin: 20px 0;
+     float: left;
+}
+ .chatbox {
+    float: right;
+}

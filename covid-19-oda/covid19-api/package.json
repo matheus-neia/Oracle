@@ -1,0 +1,23 @@
+{
+  "name": "covid19-api",
+  "version": "1.0.0",
+  "description": "Oracle Bots Custom Component Package - COVID 19 API",
+  "main": "main.js",
+  "scripts": {
+    "bots-node-sdk": "bots-node-sdk",
+    "help": "npm run bots-node-sdk -- --help",
+    "prepack": "npm run bots-node-sdk -- pack --dry-run",
+    "start": "npm run bots-node-sdk -- service ."
+  },
+  "repository": {},
+  "dependencies": {
+    "covid19-api": "^1.0.3"
+  },
+  "devDependencies": {
+    "@oracle/bots-node-sdk": "^2.3.0",
+    "express": "^4.16.3"
+  },
+  "bundledDependencies": [
+    "covid19-api"
+  ]
+}
