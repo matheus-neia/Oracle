@@ -67,7 +67,7 @@
 
 
 ### Passo 3
-**3.1** No canto esquerdo da tela clique em **Integrations** e depois no canto direito da tela em **Create**. Escolha a opção **Basic Routing**.
+**3.1** No canto esquerdo da tela clique em **Integrations** e depois no canto direito da tela em **Create**. Escolha a opção **App Driven Orchestration**.
 
 ![image011.png](images/1/image011.png "image011.png")
 
@@ -75,15 +75,15 @@
 
 ![image012.png](images/1/image012.png "image012.png")
 
-**3.3** Na próxima tela, busque no campo direito (1) pelo conexão `RestAdapterWorkshop_XX` (2), arraste ela até o campo *Drag and Drop a Trigger* (3).
+**3.3** Na próxima tela, Adicione a conexão REST `RestAdapterWorkshop_XX` eso fue creado antes.
 
-![image013.png](images/1/image013.png "image013.png")
+![image013.png](images/1/image013_1.png)
 
 **3.4** Configurando o adaptador REST
 
 **3.4.1** Preenche os campos conforme imagens abaixo:
 
-![image013_1.png](images/1/image013_1.png)
+![image013_1.png](images/1/image013_5.png)
 
 **3.4.2** Clique em  **Next >**
 
@@ -128,9 +128,9 @@ Na tela *Summary*, confira se as configurações estão correstas em **Endpoint 
 
 ![image018.png](images/1/image018.png)
 
-**3.5** Na tela principal, busque no campo direito (1), pela conexão `SalesCloudWorkshop_XX` (2), arraste ela até o campo *Drag and Drop a Invoke* (3).
+**3.5** Na tela principal, adicione mais um componente `SalesCloudWorkshop_XX`.
 
-![image019.png](images/1/image019.png "image019.png")
+![image019.png](images/1/image019_1.png)
 
 **3.6** Configurando o adaptador SalesCloud
 
@@ -157,9 +157,9 @@ e depois clique em **Next >**.
 
 **3.7** Configurando uma chamada para recuperar o ID do *Owner* da oportunidade:
 
-**3.7.1** Do lado direito da tela procure novamente pela conexão `SalesCloudWorkshop_XX` e arraste até o **+** no canto esquerdo, conforme indicado na figura abaixo:
+**3.7.1** Adicione novamente o componente `SalesCloudWorkshop_XX` e arraste entre a primeira conexão REST e a última chamada, conforme indicado na figura abaixo:
 
-![image023.png](images/1/image023.png)
+![image023.png](images/1/image023_001.png)
 
 **3.7.2** Após abrir a tela de configuração desta integração coloque o nome da integração como `GetUserByUsername` e depois clique em **Next >**
 
@@ -182,19 +182,19 @@ Clique em **Next >**
 
 *Caso você tenha dúvidas de como efetuar o mapeamento veja o link que está na seção Pré Requisitos: Como usar o mapeamento. [[1]][mapeamento]*
 
-**3.8.1** Clique no mapeamento mais a esquerda da tela e depois em **+**, conforme figura abaixo:
+**3.8.1** Clique no mapeamento com o nome **Map to GetUserByUsername**, conforme figura abaixo:
 
 ![image025.png](images/1/image025.png)
 
-**3.8.2** Vá navegando do lado direito da tela, abrindo os campos até chegar no campo **attribute** conforme imagem abaixo. Clique em cima do campo **attribute** para abrir a tela de construção de mapeamento.
+**3.8.2** Vá navegando do lado direito da tela, abrindo os campos até chegar no campo **attribute** conforme imagem abaixo. Clique com o botão direito em cima do campo **attribute** e depois em **Create target Node**.
 
 ![image026.png](images/1/image026.png)
 
-**3.8.3** No lugar indicado em vermelho coloque o valor `Username`, clique em **Save** e depois **Close**:
+**3.8.3** No lugar indicado em vermelho coloque o valor `Username`, clique em **Save**:
 
 ![image027.png](images/1/image027.png)
 
-**3.8.4** Repita os passos 3.8.1 e 3.8.2 para o campo **operator**. O valor será `=`
+**3.8.4** Repita os passos 3.8.2 e 3.8.3 para o campo **operator**. O valor será `=`
 
 **3.8.5** Por último arraste, utilizando o mouse, o campo `loginOwner` para o campo **value**. A sua tela de mapeamento deverá ficar igual a tela abaixo:
 
@@ -202,24 +202,36 @@ Clique em **Next >**
 
 **3.8.6** Clique em **Validate** depois em **Close**
 
+![image028_1.png](images/1/image028_1.png)
+
 **3.9** Mapeamento da chamado para a conexão do Sales Cloud:
 
 *Caso você tenha dúvidas de como efetuar o mapeamento veja o link que está na seção Pré Requisitos: Como usar o mapeamento. [[1]][mapeamento]*
 
-**3.9.1** Clique no mapeamento mais ao centro e acima da tela e depois em **+**, conforme figura abaixo:
+**3.9.1** Clique no componente de mapeamento chamado **Map to CreateOppEngagement**, conforme figura abaixo:
 
 ![image029.png](images/1/image029.png)
 
 **3.9.2** Faça o mapeamento arrastando os campos da esquerda para a direita conforme figura abaixo:
 
-    CurrencyCode = USD (campo fixo)
     opportunityName ===> Name
     winProbability ===> WinProb
     PartyID ===> OwnerResourcePartyId
 
+
+	opportunityName ===> Name
 ![image030.png](images/1/image030.png)
 
+	winProbability ===> WinProb
+    
+![image030.png](images/1/image030_1.png)
+
+	PartyID ===> OwnerResourcePartyId
+![image030.png](images/1/image030_2.png)
+
 **3.9.3** Clique em **Validate** depois em **Close**
+
+![image030.png](images/1/image030_3.png)
 
 **3.10** Mapeamento de retorno da chamada do Sales Cloud
 
@@ -245,7 +257,7 @@ Clique em **Next >**
 
 ![image034.png](images/1/image034.png)
 
-**3.11** Após isso, verifique se o campo de porcentagem de atividades está igual a 100%, se estiver clique em **Save** e depois em **Close**
+**3.12** Após isso, clique em **Save** e depois em **Close**
 
 ![image035.png](images/1/image035.png)
 
