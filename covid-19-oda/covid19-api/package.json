@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@oracle/bots-node-sdk": "^2.3.0",
-    "express": "^4.16.3"
+    "express": "^4.17.3"
   },
   "bundledDependencies": [
     "covid19-api"
